@@ -2,11 +2,11 @@
 from pathlib import Path
 import numpy as np
 import cv2
-sys.path.insert(0, str(Path('camera_calib').resolve()))
+sys.path.insert(0, str(Path('01_camera_calib').resolve()))
 import calib_lib as cl
 import selftest_synthetic as ss
 
-calib = cl.load_calib('camera_calib/out/calib.json')
+calib = cl.load_calib('01_camera_calib/out/calib.json')
 K, dist = calib['camera_matrix'], calib['dist_coeffs']
 print('K', K.tolist())
 print('dist', dist.ravel().tolist())
