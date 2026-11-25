@@ -1,0 +1,42 @@
+{
+  "A_ideal": {
+    "frames": 63,
+    "points": 13959
+  },
+  "A_jitter": {
+    "frames": 63,
+    "points": 13962
+  },
+  "B_ideal": {
+    "frames": 63,
+    "points": 14102,
+    "slot": {
+      "points": 156,
+      "median_z_mm": 35.0
+    },
+    "hole": {
+      "points": 156,
+      "median_z_mm": 35.0
+    }
+  },
+  "B_jitter": {
+    "frames": 63,
+    "points": 14145,
+    "slot": {
+      "points": 156,
+      "median_z_mm": 34.964020975612044
+    },
+    "hole": {
+      "points": 156,
+      "median_z_mm": 34.965292376339946
+    }
+  },
+  "C_ideal": {
+    "frames": 63,
+    "points": 14356
+  },
+  "C_jitter": {
+    "frames": 63,
+    "points": 14356
+  }
+}

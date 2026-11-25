@@ -1,0 +1,80 @@
+{
+  "created": "2026-11-16T22:21:46",
+  "source": "LASER_IMAGE",
+  "unit": "mm",
+  "image": "C:\\Users\\wangjianing\\Desktop\\光赛\\camera_calib\\laser_plane_calib\\out\\validation\\images\\h31_center.png",
+  "calibration": "C:\\Users\\wangjianing\\Desktop\\光赛\\camera_calib\\out\\calib.json",
+  "laser_plane": {
+    "unit": "mm",
+    "frame": "camera: X right, Y down, Z forward",
+    "normal": [
+      0.9806111139574364,
+      6.79086025107134e-05,
+      0.1959638705771496
+    ],
+    "d": -97.97481276272262,
+    "unit_normal": [
+      0.9806111139574362,
+      6.790860251071339e-05,
+      0.19596387057714953
+    ],
+    "normalized_d": -97.97481276272259,
+    "plane_abcd": [
+      0.9806111139574362,
+      6.790860251071339e-05,
+      0.19596387057714953,
+      -97.97481276272259
+    ],
+    "equation": "n . X + d = 0",
+    "source": "out\\results\\laser_plane.json",
+    "created": "2026-11-16T22:21:46"
+  },
+  "parameters": {
+    "axis": "row",
+    "roi_xy": [
+      620,
+      690,
+      230,
+      580
+    ],
+    "smooth_sigma": 1.0,
+    "threshold_sigma": 4.0,
+    "min_peak": 8.0,
+    "min_peak_fraction": 0.1,
+    "centroid_radius": 4,
+    "max_width": 9.0,
+    "min_step_mm": 2.0
+  },
+  "extraction": {
+    "axis": "row",
+    "roi_xy": [
+      620,
+      690,
+      230,
+      580
+    ],
+    "scan_count": 350,
+    "valid_count": 254,
+    "valid_fraction": 0.7257142857142858,
+    "snr_median": 204.46908121547636,
+    "width_median_px": 1.1700906073414896,
+    "center_min": 647.2241766821187,
+    "center_max": 660.6974780292089
+  },
+  "reconstruction": {
+    "valid_count": 254,
+    "invalid_count": 0
+  },
+  "height": {
+    "height_mm": 31.046717959273224,
+    "level_hi_mm": 499.9751208142151,
+    "level_lo_mm": 468.92840285494185,
+    "separation_mm": 31.04498799662349,
+    "has_step": true,
+    "n_inliers": 245,
+    "n_outliers": 9,
+    "sigma_lo_mm": 0.01639901069238244,
+    "sigma_hi_mm": 0.024473438434550108,
+    "height_se_mm": 0.00336141049809651
+  }
+}

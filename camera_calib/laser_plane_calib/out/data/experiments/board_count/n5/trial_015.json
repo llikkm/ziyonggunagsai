@@ -1,0 +1,10 @@
+{
+  "source": "data/measurements.json",
+  "indices": [
+    1,
+    2,
+    3,
+    9,
+    13
+  ]
+}

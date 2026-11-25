@@ -1,0 +1,102 @@
+[
+  {
+    "case": "h10_center",
+    "has_step": false,
+    "measured_height_mm": null,
+    "true_height_mm": 10.0,
+    "z_far_mm": 500.0,
+    "y_split_mm": 0.0,
+    "error_mm": null,
+    "abs_error_mm": null
+  },
+  {
+    "case": "h31_center",
+    "has_step": false,
+    "measured_height_mm": null,
+    "true_height_mm": 31.0,
+    "z_far_mm": 500.0,
+    "y_split_mm": 0.0,
+    "error_mm": null,
+    "abs_error_mm": null
+  },
+  {
+    "case": "h50_center",
+    "has_step": false,
+    "measured_height_mm": null,
+    "true_height_mm": 50.0,
+    "z_far_mm": 500.0,
+    "y_split_mm": 0.0,
+    "error_mm": null,
+    "abs_error_mm": null
+  },
+  {
+    "case": "h31_near_left",
+    "has_step": false,
+    "measured_height_mm": null,
+    "true_height_mm": 31.0,
+    "z_far_mm": 450.0,
+    "y_split_mm": -25.0,
+    "error_mm": null,
+    "abs_error_mm": null
+  },
+  {
+    "case": "h31_far_right",
+    "has_step": false,
+    "measured_height_mm": null,
+    "true_height_mm": 31.0,
+    "z_far_mm": 550.0,
+    "y_split_mm": 25.0,
+    "error_mm": null,
+    "abs_error_mm": null
+  },
+  {
+    "case": "h31_outside",
+    "has_step": false,
+    "measured_height_mm": null,
+    "true_height_mm": 31.0,
+    "z_far_mm": 650.0,
+    "y_split_mm": 0.0,
+    "error_mm": null,
+    "abs_error_mm": null
+  },
+  {
+    "case": "h10_near",
+    "has_step": false,
+    "measured_height_mm": null,
+    "true_height_mm": 10.0,
+    "z_far_mm": 450.0,
+    "y_split_mm": 20.0,
+    "error_mm": null,
+    "abs_error_mm": null
+  },
+  {
+    "case": "h10_far",
+    "has_step": false,
+    "measured_height_mm": null,
+    "true_height_mm": 10.0,
+    "z_far_mm": 550.0,
+    "y_split_mm": -20.0,
+    "error_mm": null,
+    "abs_error_mm": null
+  },
+  {
+    "case": "h50_near",
+    "has_step": false,
+    "measured_height_mm": null,
+    "true_height_mm": 50.0,
+    "z_far_mm": 450.0,
+    "y_split_mm": 20.0,
+    "error_mm": null,
+    "abs_error_mm": null
+  },
+  {
+    "case": "h50_far",
+    "has_step": false,
+    "measured_height_mm": null,
+    "true_height_mm": 50.0,
+    "z_far_mm": 550.0,
+    "y_split_mm": -20.0,
+    "error_mm": null,
+    "abs_error_mm": null
+  }
+]

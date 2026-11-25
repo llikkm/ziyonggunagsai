@@ -1,0 +1,9 @@
+{
+  "unit": "mm",
+  "frame": "camera: X right, Y down, Z forward",
+  "normal": [0.0, 1.0, 0.2],
+  "d": -120.0,
+  "equation": "n . X + d = 0",
+  "source": "SYNTHETIC_NOMINAL",
+  "notes": "仿真用标称激光平面，不是实测标定结果。真实实验必须换成激光平面标定值。"
+}

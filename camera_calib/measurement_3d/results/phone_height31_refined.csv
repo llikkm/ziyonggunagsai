@@ -1,0 +1,11 @@
+﻿image,height_mm,signed_displacement_mm,parallel_angle_deg,absolute_error_mm,reprojection_rms_px
+C:\Users\wangjianing\Desktop\光赛\camera_calib\measurement_3d\data\phone_height20\frame_01.png,31.193124310435294,-31.193124310435294,0.7660920880434998,0.19312431043529443,0.29979607462882996
+C:\Users\wangjianing\Desktop\光赛\camera_calib\measurement_3d\data\phone_height20\frame_02.png,31.283900869099625,-31.283900869099625,0.7332217923294013,0.2839008690996252,0.302967369556427
+C:\Users\wangjianing\Desktop\光赛\camera_calib\measurement_3d\data\phone_height20\frame_03.png,31.322304370238907,-31.322304370238907,0.7116994384581469,0.322304370238907,0.3011447787284851
+C:\Users\wangjianing\Desktop\光赛\camera_calib\measurement_3d\data\phone_height20\frame_04.png,31.305980858066896,-31.305980858066896,0.7483951365257736,0.3059808580668957,0.300798237323761
+C:\Users\wangjianing\Desktop\光赛\camera_calib\measurement_3d\data\phone_height20\frame_05.png,31.277646140894316,-31.277646140894316,0.7809019363706534,0.2776461408943156,0.30809861421585083
+C:\Users\wangjianing\Desktop\光赛\camera_calib\measurement_3d\data\phone_height20\frame_06.png,31.262262534894198,-31.262262534894198,0.7985289167292937,0.26226253489419804,0.30384325981140137
+C:\Users\wangjianing\Desktop\光赛\camera_calib\measurement_3d\data\phone_height20\frame_07.png,31.265269469371738,-31.265269469371738,0.8012184779040771,0.2652694693717379,0.30540043115615845
+C:\Users\wangjianing\Desktop\光赛\camera_calib\measurement_3d\data\phone_height20\frame_08.png,31.258292238919868,-31.258292238919868,0.8033107329415066,0.25829223891986786,0.31097856163978577
+C:\Users\wangjianing\Desktop\光赛\camera_calib\measurement_3d\data\phone_height20\frame_09.png,31.25340264304855,-31.25340264304855,0.797285652727448,0.253402643048549,0.31018945574760437
+C:\Users\wangjianing\Desktop\光赛\camera_calib\measurement_3d\data\phone_height20\frame_10.png,31.240649580328498,-31.240649580328498,0.8101357661233242,0.2406495803284976,0.30836355686187744

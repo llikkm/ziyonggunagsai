@@ -1,0 +1,35 @@
+{
+  "fit": {
+    "normal": [
+      0.9806347041232587,
+      -0.000110065462016945,
+      0.19584576828382833
+    ],
+    "d": -97.91769042180489,
+    "equation": "n . X + d = 0",
+    "unit": "mm",
+    "frame": "camera: X right, Y down, Z forward",
+    "normalized": true,
+    "residual_rms_mm": 0.2636703738032128,
+    "residual_max_mm": 1.018222461600402,
+    "singular_values": [
+      2976.370508120669,
+      2505.851039017804,
+      17.144657918401634
+    ],
+    "condition": 1.1877683317070955,
+    "degenerate": false,
+    "n_points": 4228
+  },
+  "angle_deg": 0.01700939005532505,
+  "d_error_mm": 0.14037714728711137,
+  "residual_rms_mm": 0.2636703738032128,
+  "residual_max_mm": 1.018222461600402,
+  "condition": 1.1877683317070955,
+  "degenerate": false,
+  "n_points": 4228,
+  "validation_mean_abs_mm": 0.09935289453538303,
+  "validation_max_abs_mm": 0.24628243245274462,
+  "validation_all_valid": true,
+  "validation_n_failed": 0
+}

@@ -1,0 +1,825 @@
+{
+  "seed": 42,
+  "mode": "ideal",
+  "frames": [
+    {
+      "frame": 0,
+      "actual_camera_mm": [
+        -30.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 1,
+      "actual_camera_mm": [
+        -28.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 2,
+      "actual_camera_mm": [
+        -26.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 3,
+      "actual_camera_mm": [
+        -24.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 4,
+      "actual_camera_mm": [
+        -22.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 5,
+      "actual_camera_mm": [
+        -20.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        734,
+        698
+      ]
+    },
+    {
+      "frame": 6,
+      "actual_camera_mm": [
+        -18.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        648,
+        612
+      ]
+    },
+    {
+      "frame": 7,
+      "actual_camera_mm": [
+        -16.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        586,
+        550
+      ]
+    },
+    {
+      "frame": 8,
+      "actual_camera_mm": [
+        -14.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        538,
+        502
+      ]
+    },
+    {
+      "frame": 9,
+      "actual_camera_mm": [
+        -12.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        496,
+        460
+      ]
+    },
+    {
+      "frame": 10,
+      "actual_camera_mm": [
+        -10.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        462,
+        426
+      ]
+    },
+    {
+      "frame": 11,
+      "actual_camera_mm": [
+        -8.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        432,
+        396
+      ]
+    },
+    {
+      "frame": 12,
+      "actual_camera_mm": [
+        -6.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        533,
+        497
+      ]
+    },
+    {
+      "frame": 13,
+      "actual_camera_mm": [
+        -4.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        617,
+        581
+      ]
+    },
+    {
+      "frame": 14,
+      "actual_camera_mm": [
+        -2.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        665,
+        629
+      ]
+    },
+    {
+      "frame": 15,
+      "actual_camera_mm": [
+        0.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        699,
+        663
+      ]
+    },
+    {
+      "frame": 16,
+      "actual_camera_mm": [
+        2.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        729,
+        693
+      ]
+    },
+    {
+      "frame": 17,
+      "actual_camera_mm": [
+        4.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        753,
+        717
+      ]
+    },
+    {
+      "frame": 18,
+      "actual_camera_mm": [
+        6.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        771,
+        735
+      ]
+    },
+    {
+      "frame": 19,
+      "actual_camera_mm": [
+        8.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        789,
+        753
+      ]
+    },
+    {
+      "frame": 20,
+      "actual_camera_mm": [
+        10.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        807,
+        771
+      ]
+    },
+    {
+      "frame": 21,
+      "actual_camera_mm": [
+        12.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        823,
+        787
+      ]
+    },
+    {
+      "frame": 22,
+      "actual_camera_mm": [
+        14.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        835,
+        799
+      ]
+    },
+    {
+      "frame": 23,
+      "actual_camera_mm": [
+        16.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        851,
+        815
+      ]
+    },
+    {
+      "frame": 24,
+      "actual_camera_mm": [
+        18.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        863,
+        827
+      ]
+    },
+    {
+      "frame": 25,
+      "actual_camera_mm": [
+        20.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        877,
+        841
+      ]
+    },
+    {
+      "frame": 26,
+      "actual_camera_mm": [
+        22.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        889,
+        853
+      ]
+    },
+    {
+      "frame": 27,
+      "actual_camera_mm": [
+        24.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        899,
+        863
+      ]
+    },
+    {
+      "frame": 28,
+      "actual_camera_mm": [
+        26.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 29,
+      "actual_camera_mm": [
+        28.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 30,
+      "actual_camera_mm": [
+        30.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 31,
+      "actual_camera_mm": [
+        32.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 32,
+      "actual_camera_mm": [
+        34.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 33,
+      "actual_camera_mm": [
+        36.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 34,
+      "actual_camera_mm": [
+        38.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 35,
+      "actual_camera_mm": [
+        40.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 36,
+      "actual_camera_mm": [
+        42.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 37,
+      "actual_camera_mm": [
+        44.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 38,
+      "actual_camera_mm": [
+        46.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 39,
+      "actual_camera_mm": [
+        48.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 40,
+      "actual_camera_mm": [
+        50.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 41,
+      "actual_camera_mm": [
+        52.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 42,
+      "actual_camera_mm": [
+        54.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 43,
+      "actual_camera_mm": [
+        56.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 44,
+      "actual_camera_mm": [
+        58.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 45,
+      "actual_camera_mm": [
+        60.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 46,
+      "actual_camera_mm": [
+        62.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 47,
+      "actual_camera_mm": [
+        64.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 48,
+      "actual_camera_mm": [
+        66.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 49,
+      "actual_camera_mm": [
+        68.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 50,
+      "actual_camera_mm": [
+        70.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 51,
+      "actual_camera_mm": [
+        72.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 52,
+      "actual_camera_mm": [
+        74.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 53,
+      "actual_camera_mm": [
+        76.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 54,
+      "actual_camera_mm": [
+        78.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 55,
+      "actual_camera_mm": [
+        80.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 56,
+      "actual_camera_mm": [
+        82.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 57,
+      "actual_camera_mm": [
+        84.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 58,
+      "actual_camera_mm": [
+        86.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 59,
+      "actual_camera_mm": [
+        88.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 60,
+      "actual_camera_mm": [
+        90.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 61,
+      "actual_camera_mm": [
+        92.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    },
+    {
+      "frame": 62,
+      "actual_camera_mm": [
+        94.0,
+        0.0,
+        210.0
+      ],
+      "hits_visible_in_frame": [
+        911,
+        911,
+        875
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "unit": "mm",
+  "frame": "camera: X right, Y down, Z forward",
+  "z_far_mm": 500.0,
+  "z_near_mm": 469.0,
+  "height_mm": 31.0,
+  "x_min_mm": -120.0,
+  "x_max_mm": 120.0,
+  "step_x_mm": 0.0,
+  "n_surface": 481,
+  "include_wall": true
+}

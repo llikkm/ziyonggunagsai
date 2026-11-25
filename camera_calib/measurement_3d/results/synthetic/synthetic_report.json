@@ -1,0 +1,49 @@
+{
+  "source": "SYNTHETIC_MATH_VALIDATION",
+  "unit": "mm",
+  "count": 315,
+  "max_3d_error_mm": 5.965597651013571e-13,
+  "tolerance_mm": 1e-05,
+  "max_plane_residual_mm": 2.2189398645162625e-13,
+  "height_check": {
+    "unit": "mm",
+    "count": 3,
+    "known_mm": 20.0,
+    "mean_mm": 20.000000102014173,
+    "absolute_error_mm": 1.0201417310895522e-07,
+    "mean_absolute_error_mm": 0.1333335739918624,
+    "std_mm": 0.20000018135492656,
+    "std_ddof": 1,
+    "reference_normal_camera": [
+      -0.14340729754322779,
+      -0.2015700964225652,
+      0.9689189043668959
+    ],
+    "samples": [
+      {
+        "image": "synthetic",
+        "height_mm": 19.799999792033468,
+        "signed_displacement_mm": 19.799999792033468,
+        "parallel_angle_deg": 0.0,
+        "absolute_error_mm": 0.20000020796653217,
+        "reprojection_rms_px": 2.0514862381638794e-05
+      },
+      {
+        "image": "synthetic",
+        "height_mm": 20.000000359265982,
+        "signed_displacement_mm": 20.000000359265982,
+        "parallel_angle_deg": 0.0,
+        "absolute_error_mm": 3.592659822970745e-07,
+        "reprojection_rms_px": 1.988965481389437e-05
+      },
+      {
+        "image": "synthetic",
+        "height_mm": 20.200000154743073,
+        "signed_displacement_mm": 20.200000154743073,
+        "parallel_angle_deg": 0.0,
+        "absolute_error_mm": 0.20000015474307276,
+        "reprojection_rms_px": 1.9767717824132548e-05
+      }
+    ]
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "created": "2026-11-17T00:23:27",
+  "unit": "mm",
+  "n_boards": 15,
+  "board_square_mm": 20.0,
+  "fit": {
+    "normal": [
+      0.9806111139574364,
+      6.79086025107134e-05,
+      0.1959638705771496
+    ],
+    "d": -97.97481276272262,
+    "equation": "n . X + d = 0",
+    "unit": "mm",
+    "frame": "camera: X right, Y down, Z forward",
+    "normalized": true,
+    "residual_rms_mm": 0.11884016602185217,
+    "residual_max_mm": 0.39813399879618316,
+    "singular_values": [
+      2976.17247603074,
+      2503.438454221056,
+      7.727352770134727
+    ],
+    "condition": 1.1888338900493463,
+    "degenerate": false,
+    "n_points": 4228
+  },
+  "evaluation": {
+    "normal_angle_error_deg": 0.009710335302363758,
+    "d_error_mm": 0.0832548063693821,
+    "normal_fit_aligned": [
+      0.9806111139574364,
+      6.79086025107134e-05,
+      0.1959638705771496
+    ],
+    "d_fit_aligned": -97.97481276272262,
+    "normal_true": [
+      0.9805806756909201,
+      0.0,
+      0.19611613513818402
+    ],
+    "d_true": -98.058067569092
+  },
+  "validation": {
+    "n_cases": 10,
+    "n_valid": 10,
+    "n_failed": 0,
+    "all_valid": true,
+    "mean_abs_error_mm": 0.09893486735875286,
+    "max_abs_error_mm": 0.20106040098403355
+  },
+  "ideal_validation": {
+    "n_cases": 10,
+    "n_valid": 10,
+    "n_failed": 0,
+    "all_valid": true,
+    "mean_abs_error_mm": 0.10300857622244167,
+    "max_abs_error_mm": 0.2663640573912289
+  },
+  "orientation": {
+    "n_poses": 15,
+    "row_count_mean": 281.8666666666667,
+    "column_count_mean": 15.733333333333333,
+    "auto_count_mean": 15.733333333333333,
+    "auto_roi_count_mean": 281.93333333333334,
+    "row_error_mean_px": 0.05260560454750176,
+    "column_error_mean_px": 1.1263530892567652,
+    "auto_error_mean_px": 1.1263530892567652,
+    "auto_roi_error_mean_px": 0.05313005177038807,
+    "auto_axis_row_fraction": 0.0,
+    "auto_roi_axis_row_fraction": 1.0
+  },
+  "checks": [
+    {
+      "name": "理想投影可精确恢复",
+      "passed": true,
+      "detail": "angle=8.538e-07 deg, rms=1.603e-08 mm"
+    },
+    {
+      "name": "主标定法向误差 < 0.5°",
+      "passed": true,
+      "detail": "0.0097°"
+    },
+    {
+      "name": "独立台阶验证均值 < 1 mm",
+      "passed": true,
+      "detail": "0.0989 mm (max 0.2011 mm)"
+    },
+    {
+      "name": "近竖直条纹用 row 模式",
+      "passed": true,
+      "detail": "row 282 centers / 0.053 px; column 16 / 1.126 px"
+    },
+    {
+      "name": "紧 ROI 后 auto 选 row",
+      "passed": true,
+      "detail": "row 100%"
+    },
+    {
+      "name": "坏覆盖被条件数识别",
+      "passed": true,
+      "detail": "condition=94.9, degenerate=True"
+    },
+    {
+      "name": "好覆盖优于全正对",
+      "passed": true,
+      "detail": "good 0.103 mm vs fronto 0.344 mm"
+    },
+    {
+      "name": "0.5 px 角点噪声验证仍 < 1 mm",
+      "passed": true,
+      "detail": "0.1415 mm"
+    },
+    {
+      "name": "0.5 px 激光噪声验证仍 < 1 mm",
+      "passed": true,
+      "detail": "0.0985 mm"
+    },
+    {
+      "name": "标定输入不含真实平面/真实位姿",
+      "passed": true,
+      "detail": "measurements keys: auto_axis, board_image, corners, corners_raw, index, laser_image, laser_uv_auto, laser_uv_column, laser_uv_row, laser_uv_row_raw, n_auto, n_column, n_row"
+    },
+    {
+      "name": "7 张图已生成",
+      "passed": true,
+      "detail": "7 张"
+    }
+  ]
+}

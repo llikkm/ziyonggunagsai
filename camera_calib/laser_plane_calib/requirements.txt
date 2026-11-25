@@ -1,0 +1,4 @@
+# 激光平面标定仿真需要 OpenCV：渲染棋盘格、solvePnP、去畸变。
+numpy>=1.22
+matplotlib>=3.5
+opencv-python>=4.6

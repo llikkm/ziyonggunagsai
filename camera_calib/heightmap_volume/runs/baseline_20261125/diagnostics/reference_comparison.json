@@ -1,0 +1,98 @@
+{
+  "A_ideal": {
+    "reference_area_mm2": 5027.0,
+    "auto_area_mm2": 5164.25,
+    "excess_outline_mm2": 143.25,
+    "lost_outline_mm2": 6.0,
+    "reference_unintegrated_mm2": 28.75,
+    "valid_height_bias_mm": -0.16882206789048657,
+    "abs_height_p95_mm": 0.16965240786238525,
+    "missed_volume_mm3": 1437.5,
+    "extra_volume_mm3": 6864.488018474441,
+    "common_height_error_mm3": -843.8149008336245
+  },
+  "B_ideal": {
+    "reference_area_mm2": 8000.0,
+    "auto_area_mm2": 8090.25,
+    "excess_outline_mm2": 90.25,
+    "lost_outline_mm2": 0.0,
+    "reference_unintegrated_mm2": 179.5,
+    "valid_height_bias_mm": -0.17169098641822148,
+    "abs_height_p95_mm": 0.18498345269941296,
+    "missed_volume_mm3": 6570.0,
+    "extra_volume_mm3": 3593.4380074989394,
+    "common_height_error_mm3": -1342.7093592837011,
+    "groove": {
+      "valid_fraction": 0.79875,
+      "floor_median_mm": 34.88335813762728,
+      "observed_fraction": 0.228125,
+      "supported_recess_mm3": 1603.5883847489654
+    },
+    "blind_hole": {
+      "valid_fraction": 0.8686708860759493,
+      "floor_median_mm": 34.883285290920014,
+      "observed_fraction": 0.23734177215189872,
+      "supported_recess_mm3": 1354.2456901144808
+    }
+  },
+  "C_ideal": {
+    "reference_area_mm2": 10000.0,
+    "auto_area_mm2": 10136.0,
+    "excess_outline_mm2": 180.25,
+    "lost_outline_mm2": 44.25,
+    "reference_unintegrated_mm2": 45.0,
+    "valid_height_bias_mm": -0.11726462837946011,
+    "abs_height_p95_mm": 0.24942943138961018,
+    "missed_volume_mm3": 1350.715591958011,
+    "extra_volume_mm3": 5380.5123447931255,
+    "common_height_error_mm3": -1167.3693755175254
+  },
+  "A_jitter": {
+    "reference_area_mm2": 5027.0,
+    "auto_area_mm2": 5163.5,
+    "excess_outline_mm2": 144.5,
+    "lost_outline_mm2": 8.0,
+    "reference_unintegrated_mm2": 36.5,
+    "valid_height_bias_mm": -0.13474590155710617,
+    "abs_height_p95_mm": 0.20405169183513222,
+    "missed_volume_mm3": 1825.0,
+    "extra_volume_mm3": 6780.171676502929,
+    "common_height_error_mm3": -672.4494217207383
+  },
+  "B_jitter": {
+    "reference_area_mm2": 8000.0,
+    "auto_area_mm2": 8093.25,
+    "excess_outline_mm2": 97.0,
+    "lost_outline_mm2": 3.75,
+    "reference_unintegrated_mm2": 102.25,
+    "valid_height_bias_mm": -0.11274110350893732,
+    "abs_height_p95_mm": 0.2562263950917867,
+    "missed_volume_mm3": 3720.0,
+    "extra_volume_mm3": 3860.4816057098496,
+    "common_height_error_mm3": -890.4010502377097,
+    "groove": {
+      "valid_fraction": 0.89,
+      "floor_median_mm": 34.89845137461447,
+      "observed_fraction": 0.251875,
+      "supported_recess_mm3": 1678.8099871508184
+    },
+    "blind_hole": {
+      "valid_fraction": 0.9050632911392406,
+      "floor_median_mm": 34.884745461263705,
+      "observed_fraction": 0.24208860759493672,
+      "supported_recess_mm3": 1390.5939962033606
+    }
+  },
+  "C_jitter": {
+    "reference_area_mm2": 10000.0,
+    "auto_area_mm2": 10117.0,
+    "excess_outline_mm2": 168.5,
+    "lost_outline_mm2": 51.5,
+    "reference_unintegrated_mm2": 58.25,
+    "valid_height_bias_mm": -0.09705409104776618,
+    "abs_height_p95_mm": 0.3206716759831248,
+    "missed_volume_mm3": 1747.479792751708,
+    "extra_volume_mm3": 5033.4647102265635,
+    "common_height_error_mm3": -964.8875096741294
+  }
+}

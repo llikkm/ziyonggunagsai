@@ -1,0 +1,7 @@
+# 纯仿真（simulate_step.py）只需要前两项。
+numpy>=1.22
+matplotlib>=3.5
+
+# 真实图像 / webcam / 镜头畸变路径才需要 OpenCV。
+# 本工程已有全局 opencv-python，无需另建虚拟环境。
+opencv-python>=4.6

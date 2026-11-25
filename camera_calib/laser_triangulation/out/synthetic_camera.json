@@ -1,0 +1,34 @@
+{
+  "unit": "mm",
+  "frame": "camera: X right, Y down, Z forward",
+  "image_size": [
+    1280,
+    720
+  ],
+  "camera_matrix": [
+    [
+      806.0,
+      0.0,
+      640.0
+    ],
+    [
+      0.0,
+      806.0,
+      360.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "dist_coeffs": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "source": "SYNTHETIC_NOMINAL",
+  "created": "2026-11-16T20:59:44"
+}

@@ -1,0 +1,45 @@
+==================================================================
+相机内参标定结果
+==================================================================
+标定时间       : 2026-11-15T12:56:20
+图像分辨率     : 1280 x 720
+标定板         : 9x6 格 -> 8x5 内部角点, 格边长 20.0 mm
+参与标定图数   : 20   (畸变模型: standard)
+
+内参矩阵 K (像素):
+  [   1108.210   0          638.685 ]
+  [ 0          1111.646     357.041 ]
+  [ 0         0          1        ]
+
+畸变系数: k1=+0.282457, k2=-1.072305, p1=-0.000581, p2=-0.003498, k3=+1.582684
+
+垂直/水平视场角: 60.01° x 35.89°  (由 fx,fy 反推)
+重投影 RMS 误差: 0.4001 px
+
+质量判据:
+  ✓ RMS < 0.5 px，标定质量良好
+  ✓ 主点 cx=638.7 接近图像中心 640.0（偏差 0.1%）
+  ✓ fx 与 fy 相差 0.31%，接近方形像素
+
+每张图的重投影误差（越大越可疑，>1 px 的图建议排除后重标）:
+  frame_19.png                 rms= 0.557 px  max= 1.798 px
+  frame_14.png                 rms= 0.535 px  max= 1.557 px
+  frame_13.png                 rms= 0.530 px  max= 1.396 px
+  frame_18.png                 rms= 0.507 px  max= 1.472 px
+  frame_15.png                 rms= 0.435 px  max= 1.038 px
+  frame_16.png                 rms= 0.428 px  max= 1.128 px
+  frame_07.png                 rms= 0.397 px  max= 0.869 px
+  frame_04.png                 rms= 0.391 px  max= 0.821 px
+  frame_08.png                 rms= 0.389 px  max= 0.909 px
+  frame_05.png                 rms= 0.378 px  max= 0.861 px
+  frame_20.png                 rms= 0.375 px  max= 1.176 px
+  frame_03.png                 rms= 0.365 px  max= 0.938 px
+  frame_17.png                 rms= 0.360 px  max= 1.085 px
+  frame_06.png                 rms= 0.356 px  max= 0.844 px
+  frame_09.png                 rms= 0.341 px  max= 1.019 px
+  frame_02.png                 rms= 0.336 px  max= 0.796 px
+  frame_10.png                 rms= 0.331 px  max= 0.878 px
+  frame_01.png                 rms= 0.284 px  max= 0.753 px
+  frame_12.png                 rms= 0.268 px  max= 0.631 px
+  frame_11.png                 rms= 0.261 px  max= 0.664 px
+==================================================================

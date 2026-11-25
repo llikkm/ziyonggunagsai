@@ -1,0 +1,212 @@
+{
+  "source": "obs",
+  "camera": 2,
+  "backend": "DSHOW",
+  "requested_backend": "dshow",
+  "image_size": [
+    1280,
+    720
+  ],
+  "mode": "calibration",
+  "calibration": null,
+  "reference": null,
+  "frames": [
+    {
+      "image": "frame_01.png",
+      "relative_board_angle_deg": null,
+      "reprojection_rms_px": null,
+      "grid_cell_row_col": [
+        1,
+        1
+      ]
+    },
+    {
+      "image": "frame_02.png",
+      "relative_board_angle_deg": null,
+      "reprojection_rms_px": null,
+      "grid_cell_row_col": [
+        1,
+        1
+      ]
+    },
+    {
+      "image": "frame_03.png",
+      "relative_board_angle_deg": null,
+      "reprojection_rms_px": null,
+      "grid_cell_row_col": [
+        2,
+        1
+      ]
+    },
+    {
+      "image": "frame_04.png",
+      "relative_board_angle_deg": null,
+      "reprojection_rms_px": null,
+      "grid_cell_row_col": [
+        2,
+        1
+      ]
+    },
+    {
+      "image": "frame_05.png",
+      "relative_board_angle_deg": null,
+      "reprojection_rms_px": null,
+      "grid_cell_row_col": [
+        2,
+        2
+      ]
+    },
+    {
+      "image": "frame_06.png",
+      "relative_board_angle_deg": null,
+      "reprojection_rms_px": null,
+      "grid_cell_row_col": [
+        2,
+        2
+      ]
+    },
+    {
+      "image": "frame_07.png",
+      "relative_board_angle_deg": null,
+      "reprojection_rms_px": null,
+      "grid_cell_row_col": [
+        1,
+        2
+      ]
+    },
+    {
+      "image": "frame_08.png",
+      "relative_board_angle_deg": null,
+      "reprojection_rms_px": null,
+      "grid_cell_row_col": [
+        1,
+        2
+      ]
+    },
+    {
+      "image": "frame_09.png",
+      "relative_board_angle_deg": null,
+      "reprojection_rms_px": null,
+      "grid_cell_row_col": [
+        0,
+        2
+      ]
+    },
+    {
+      "image": "frame_10.png",
+      "relative_board_angle_deg": null,
+      "reprojection_rms_px": null,
+      "grid_cell_row_col": [
+        0,
+        2
+      ]
+    },
+    {
+      "image": "frame_11.png",
+      "relative_board_angle_deg": null,
+      "reprojection_rms_px": null,
+      "grid_cell_row_col": [
+        0,
+        1
+      ]
+    },
+    {
+      "image": "frame_12.png",
+      "relative_board_angle_deg": null,
+      "reprojection_rms_px": null,
+      "grid_cell_row_col": [
+        0,
+        1
+      ]
+    },
+    {
+      "image": "frame_13.png",
+      "relative_board_angle_deg": null,
+      "reprojection_rms_px": null,
+      "grid_cell_row_col": [
+        0,
+        0
+      ]
+    },
+    {
+      "image": "frame_14.png",
+      "relative_board_angle_deg": null,
+      "reprojection_rms_px": null,
+      "grid_cell_row_col": [
+        0,
+        0
+      ]
+    },
+    {
+      "image": "frame_15.png",
+      "relative_board_angle_deg": null,
+      "reprojection_rms_px": null,
+      "grid_cell_row_col": [
+        1,
+        0
+      ]
+    },
+    {
+      "image": "frame_16.png",
+      "relative_board_angle_deg": null,
+      "reprojection_rms_px": null,
+      "grid_cell_row_col": [
+        1,
+        0
+      ]
+    },
+    {
+      "image": "frame_17.png",
+      "relative_board_angle_deg": null,
+      "reprojection_rms_px": null,
+      "grid_cell_row_col": [
+        2,
+        0
+      ]
+    },
+    {
+      "image": "frame_18.png",
+      "relative_board_angle_deg": null,
+      "reprojection_rms_px": null,
+      "grid_cell_row_col": [
+        2,
+        0
+      ]
+    },
+    {
+      "image": "frame_19.png",
+      "relative_board_angle_deg": null,
+      "reprojection_rms_px": null,
+      "grid_cell_row_col": [
+        2,
+        0
+      ]
+    },
+    {
+      "image": "frame_20.png",
+      "relative_board_angle_deg": null,
+      "reprojection_rms_px": null,
+      "grid_cell_row_col": [
+        1,
+        1
+      ]
+    }
+  ],
+  "grid_counts": [
+    [
+      2,
+      2,
+      2
+    ],
+    [
+      2,
+      3,
+      2
+    ],
+    [
+      3,
+      2,
+      2
+    ]
+  ]
+}

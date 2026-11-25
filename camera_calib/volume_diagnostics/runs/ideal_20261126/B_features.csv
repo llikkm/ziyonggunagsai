@@ -1,0 +1,9 @@
+﻿feature,region,cells,area_mm2,direct_cells,triangle_cells,local_cells,missing_cells,auto_outside_cells,correct_layer_direct_cells,correct_layer_valid_cells,valid_median_mm,void_above_floor_mm3
+slot,opening,1600,400.0,365,842,71,322,0,351,1250,34.88335813762728,2000.0
+slot,inner_edge,304,76.0,41,2,47,214,0,27,62,35.2153419061281,380.0
+slot,outer_edge,336,84.0,84,138,3,111,0,75,216,39.804826796547374,0.0
+slot,core,1296,324.0,324,840,24,108,0,324,1188,34.88335703438887,1620.0
+bore,opening,1264,316.0,300,741,57,166,0,284,1053,34.883285290920014,1580.0
+bore,inner_edge,244,61.0,51,22,46,125,0,35,75,35.275437632571986,305.0
+bore,outer_edge,264,66.0,72,79,33,80,0,65,176,39.81500380679479,0.0
+bore,core,1020,255.0,249,719,11,41,0,249,978,34.88328417337303,1275.0

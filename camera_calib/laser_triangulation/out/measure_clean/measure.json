@@ -1,0 +1,75 @@
+{
+  "created": "2026-11-15T16:58:51",
+  "source": "LASER_IMAGE",
+  "unit": "mm",
+  "image": "C:\\Users\\wangjianing\\Desktop\\光赛\\camera_calib\\laser_triangulation\\out\\laser_clean.png",
+  "calibration": "C:\\Users\\wangjianing\\Desktop\\光赛\\camera_calib\\laser_triangulation\\out\\synthetic_camera.json",
+  "laser_plane": {
+    "unit": "mm",
+    "frame": "camera: X right, Y down, Z forward",
+    "normal": [
+      0.0,
+      1.0,
+      0.2
+    ],
+    "d": -120.0,
+    "unit_normal": [
+      0.0,
+      0.9805806756909201,
+      0.19611613513818402
+    ],
+    "normalized_d": -117.66968108291042,
+    "plane_abcd": [
+      0.0,
+      0.9805806756909201,
+      0.19611613513818402,
+      -117.66968108291042
+    ],
+    "equation": "n . X + d = 0",
+    "source": "out\\synthetic_plane.json",
+    "created": "2026-11-15T16:58:51"
+  },
+  "parameters": {
+    "axis": "auto",
+    "roi_xy": null,
+    "smooth_sigma": 1.0,
+    "threshold_sigma": 4.0,
+    "min_peak": 8.0,
+    "min_peak_fraction": 0.1,
+    "centroid_radius": 4,
+    "max_width": 9.0,
+    "min_step_mm": 2.0
+  },
+  "extraction": {
+    "axis": "column",
+    "roi_xy": [
+      0,
+      1280,
+      0,
+      720
+    ],
+    "scan_count": 1280,
+    "valid_count": 406,
+    "valid_fraction": 0.3171875,
+    "snr_median": 143.3082465829304,
+    "width_median_px": 1.0726377605867545,
+    "center_min": 392.18460458794164,
+    "center_max": 405.0512060655828
+  },
+  "reconstruction": {
+    "valid_count": 406,
+    "invalid_count": 0
+  },
+  "height": {
+    "height_mm": 31.029822652825942,
+    "level_hi_mm": 500.03466013983837,
+    "level_lo_mm": 469.0048374870124,
+    "separation_mm": 31.029495095529057,
+    "has_step": true,
+    "n_inliers": 399,
+    "n_outliers": 7,
+    "sigma_lo_mm": 0.021590500114804182,
+    "sigma_hi_mm": 0.030468292152721777,
+    "height_se_mm": 0.003333116970117136
+  }
+}

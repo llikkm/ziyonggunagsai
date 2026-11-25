@@ -1,0 +1,20 @@
+{
+  "source": "obs",
+  "camera": 2,
+  "backend": "DSHOW",
+  "requested_backend": "dshow",
+  "image_size": [
+    1280,
+    720
+  ],
+  "mode": "measurement",
+  "calibration": "C:\\Users\\wangjianing\\Desktop\\光赛\\camera_calib\\out\\phone\\calib.json",
+  "reference": null,
+  "frames": [
+    {
+      "image": "frame_01.png",
+      "relative_board_angle_deg": null,
+      "reprojection_rms_px": 0.27362003922462463
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "inputs_sha256": {
+    "A": "983d1b03cc68fcbb34a647330903acd25ad2e2d0dacedebd8363e196787b1cbb",
+    "B": "6567240dd65ae957c9a8eff3e5b9fb84bd160124cc2af7bd83c6cd798bbd3827",
+    "C": "8c5069694d2a733ef41cb28d2c06927671f3fb5b1e3a5291eb9bec4d6000065d"
+  },
+  "geometry": {
+    "circle": {
+      "center_mm": [
+        -0.32092495709517166,
+        0.22864349994589192
+      ],
+      "edge_points": 80,
+      "fitted_radius_mm": 40.016868125750925,
+      "fitted_radius_bias_mm": 0.01686812575092489,
+      "auto_equivalent_radius_mm": 40.54419600540429,
+      "true_radius_mm": 40,
+      "fit_continuous_area_error_mm2": 4.240316283990069
+    },
+    "A": {
+      "excess_area_mm2": 143.25,
+      "lost_area_mm2": 6.0,
+      "outside_target_cells": 53768,
+      "common_mean_height_error_mm": -0.16882206789048657,
+      "common_p95_abs_height_error_mm": 0.16965240786238525
+    },
+    "B": {
+      "excess_area_mm2": 90.25,
+      "lost_area_mm2": 0.0,
+      "outside_target_cells": 41876,
+      "common_mean_height_error_mm": -0.17169098641822148,
+      "common_p95_abs_height_error_mm": 0.18498345269941296
+    },
+    "C": {
+      "excess_area_mm2": 180.25,
+      "lost_area_mm2": 44.25,
+      "outside_target_cells": 33876,
+      "common_mean_height_error_mm": -0.11726462837946011,
+      "common_p95_abs_height_error_mm": 0.24942943138961018
+    }
+  },
+  "scores": {
+    "grid_0.25": 0.008509472473239929,
+    "grid_0.5": 0.012539607630068703,
+    "factor_000": 0.012539607630068703,
+    "factor_001": 0.011503826412115087,
+    "factor_010": 0.013883762849880564,
+    "factor_011": 0.015393954001101592,
+    "factor_100": 0.013504839817699213,
+    "factor_101": 0.003880865409841152,
+    "factor_110": 0.009614712228712803,
+    "factor_111": 2.670683975191885e-05,
+    "circle_A_only": 0.01060245314551985,
+    "grid_1": 0.017599905956589883
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unit": "mm",
+  "frame": "camera: X right, Y down, Z forward",
+  "normal": [
+    0.0,
+    1.0,
+    0.2
+  ],
+  "d": -120.0,
+  "unit_normal": [
+    0.0,
+    0.9805806756909201,
+    0.19611613513818402
+  ],
+  "normalized_d": -117.66968108291042,
+  "plane_abcd": [
+    0.0,
+    0.9805806756909201,
+    0.19611613513818402,
+    -117.66968108291042
+  ],
+  "equation": "n . X + d = 0",
+  "source": "SYNTHETIC_NOMINAL",
+  "created": "2026-11-16T20:59:44"
+}

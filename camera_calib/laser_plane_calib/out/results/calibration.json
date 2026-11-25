@@ -1,0 +1,413 @@
+{
+  "created": "2026-11-17T00:23:24",
+  "source": "LASER_PLANE_CALIB_SIM",
+  "unit": "mm",
+  "camera": {
+    "camera_matrix": [
+      [
+        989.7675743388903,
+        0.0,
+        647.6162562800047
+      ],
+      [
+        0.0,
+        991.6614542938157,
+        405.4281158144691
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "dist_coeffs": [
+      0.26633152053927456,
+      -2.00126543833151,
+      0.011065882424419471,
+      -0.02728219832551196,
+      2.441874737496963
+    ],
+    "image_size": [
+      1280,
+      720
+    ],
+    "source": "..\\out\\calib.json"
+  },
+  "board": {
+    "cols": 9,
+    "rows": 6,
+    "inner_cols": 8,
+    "inner_rows": 5,
+    "square_mm": 20.0,
+    "margin_mm": 12.0,
+    "physical_width_mm": 204.0,
+    "physical_height_mm": 144.0,
+    "object_origin": "第一个内部角点",
+    "note": "本次方格 20 mm；实物打印缩放后若实测 19mm，真实标定请传 --square 19（或实测值）"
+  },
+  "n_boards": 15,
+  "noise": {
+    "corner_px": 0.2,
+    "laser_px": 0.2
+  },
+  "fit": {
+    "normal": [
+      0.9806111139574364,
+      6.79086025107134e-05,
+      0.1959638705771496
+    ],
+    "d": -97.97481276272262,
+    "equation": "n . X + d = 0",
+    "unit": "mm",
+    "frame": "camera: X right, Y down, Z forward",
+    "normalized": true,
+    "residual_rms_mm": 0.11884016602185217,
+    "residual_max_mm": 0.39813399879618316,
+    "singular_values": [
+      2976.17247603074,
+      2503.438454221056,
+      7.727352770134727
+    ],
+    "condition": 1.1888338900493463,
+    "degenerate": false,
+    "n_points": 4228
+  },
+  "evaluation": {
+    "normal_angle_error_deg": 0.009710335302363758,
+    "d_error_mm": 0.0832548063693821,
+    "normal_fit_aligned": [
+      0.9806111139574364,
+      6.79086025107134e-05,
+      0.1959638705771496
+    ],
+    "d_fit_aligned": -97.97481276272262,
+    "normal_true": [
+      0.9805806756909201,
+      0.0,
+      0.19611613513818402
+    ],
+    "d_true": -98.058067569092
+  },
+  "per_pose": [
+    {
+      "index": 0,
+      "pnp_rms_px": 0.32086576359542923,
+      "n_laser": 273,
+      "n_points": 273,
+      "point_residual_rms_mm": 0.12239892588535313,
+      "point_residual_max_mm": 0.32539881213963895,
+      "board_plane_angle_error_deg": 0.24257914563013633,
+      "board_plane_d_error_mm": 0.16682218805635785
+    },
+    {
+      "index": 1,
+      "pnp_rms_px": 0.31713455309957944,
+      "n_laser": 280,
+      "n_points": 280,
+      "point_residual_rms_mm": 0.1180340051900772,
+      "point_residual_max_mm": 0.331532306292047,
+      "board_plane_angle_error_deg": 0.2346590914971844,
+      "board_plane_d_error_mm": -0.4488385397099819
+    },
+    {
+      "index": 2,
+      "pnp_rms_px": 0.32296414993538436,
+      "n_laser": 280,
+      "n_points": 280,
+      "point_residual_rms_mm": 0.1100393375559312,
+      "point_residual_max_mm": 0.2937143201387755,
+      "board_plane_angle_error_deg": 0.13466240793633136,
+      "board_plane_d_error_mm": -0.14464723935759594
+    },
+    {
+      "index": 3,
+      "pnp_rms_px": 0.3097633212288518,
+      "n_laser": 270,
+      "n_points": 270,
+      "point_residual_rms_mm": 0.1039993818262625,
+      "point_residual_max_mm": 0.33746353166715437,
+      "board_plane_angle_error_deg": 0.19552623487352622,
+      "board_plane_d_error_mm": 0.7173123919457112
+    },
+    {
+      "index": 4,
+      "pnp_rms_px": 0.3905750385814834,
+      "n_laser": 255,
+      "n_points": 255,
+      "point_residual_rms_mm": 0.15177968749672385,
+      "point_residual_max_mm": 0.39813399879618316,
+      "board_plane_angle_error_deg": 0.21976767843949233,
+      "board_plane_d_error_mm": -1.2773343903277805
+    },
+    {
+      "index": 5,
+      "pnp_rms_px": 0.28636005509289686,
+      "n_laser": 276,
+      "n_points": 276,
+      "point_residual_rms_mm": 0.11929068360126513,
+      "point_residual_max_mm": 0.36257593050900994,
+      "board_plane_angle_error_deg": 0.23817418346049457,
+      "board_plane_d_error_mm": 0.4701022817382636
+    },
+    {
+      "index": 6,
+      "pnp_rms_px": 0.28457442004873634,
+      "n_laser": 333,
+      "n_points": 333,
+      "point_residual_rms_mm": 0.09655674452719475,
+      "point_residual_max_mm": 0.3419451173147934,
+      "board_plane_angle_error_deg": 0.2416528141374076,
+      "board_plane_d_error_mm": 0.14586591058412068
+    },
+    {
+      "index": 7,
+      "pnp_rms_px": 0.3181565587105024,
+      "n_laser": 271,
+      "n_points": 271,
+      "point_residual_rms_mm": 0.1159589042715321,
+      "point_residual_max_mm": 0.3955769380987988,
+      "board_plane_angle_error_deg": 0.20608015682180894,
+      "board_plane_d_error_mm": -0.30579633376919446
+    },
+    {
+      "index": 8,
+      "pnp_rms_px": 0.2681658801327215,
+      "n_laser": 263,
+      "n_points": 263,
+      "point_residual_rms_mm": 0.10798743953796155,
+      "point_residual_max_mm": 0.2960759137286715,
+      "board_plane_angle_error_deg": 0.02760313937775954,
+      "board_plane_d_error_mm": 0.11717182931096204
+    },
+    {
+      "index": 9,
+      "pnp_rms_px": 0.2809006953164201,
+      "n_laser": 287,
+      "n_points": 287,
+      "point_residual_rms_mm": 0.16120472319871496,
+      "point_residual_max_mm": 0.387287502449297,
+      "board_plane_angle_error_deg": 0.2986967586254378,
+      "board_plane_d_error_mm": 1.32914610366538
+    },
+    {
+      "index": 10,
+      "pnp_rms_px": 0.3968477555739294,
+      "n_laser": 273,
+      "n_points": 273,
+      "point_residual_rms_mm": 0.10494936930094119,
+      "point_residual_max_mm": 0.3398696210860521,
+      "board_plane_angle_error_deg": 0.05811629356656547,
+      "board_plane_d_error_mm": 0.1175496151306561
+    },
+    {
+      "index": 11,
+      "pnp_rms_px": 0.35318809247365074,
+      "n_laser": 284,
+      "n_points": 284,
+      "point_residual_rms_mm": 0.10800270490982893,
+      "point_residual_max_mm": 0.2882706984632222,
+      "board_plane_angle_error_deg": 0.2208078185059965,
+      "board_plane_d_error_mm": 0.2606490717675456
+    },
+    {
+      "index": 12,
+      "pnp_rms_px": 0.40546939283009303,
+      "n_laser": 260,
+      "n_points": 260,
+      "point_residual_rms_mm": 0.14091053202785583,
+      "point_residual_max_mm": 0.3963949609352113,
+      "board_plane_angle_error_deg": 0.3176484432130953,
+      "board_plane_d_error_mm": -0.7248362594150422
+    },
+    {
+      "index": 13,
+      "pnp_rms_px": 0.27187385993056656,
+      "n_laser": 288,
+      "n_points": 288,
+      "point_residual_rms_mm": 0.11256403492502509,
+      "point_residual_max_mm": 0.35767192624638255,
+      "board_plane_angle_error_deg": 0.18636250426628523,
+      "board_plane_d_error_mm": 0.5341852194280818
+    },
+    {
+      "index": 14,
+      "pnp_rms_px": 0.34016668579748494,
+      "n_laser": 335,
+      "n_points": 335,
+      "point_residual_rms_mm": 0.09778492523612285,
+      "point_residual_max_mm": 0.32601766509480967,
+      "board_plane_angle_error_deg": 0.23150652808681738,
+      "board_plane_d_error_mm": 0.16632960307180156
+    }
+  ],
+  "ideal": {
+    "fit": {
+      "normal": [
+        0.9805806756894876,
+        -7.63873131415238e-11,
+        0.1961161351453468
+      ],
+      "d": -98.05806756960256,
+      "equation": "n . X + d = 0",
+      "unit": "mm",
+      "frame": "camera: X right, Y down, Z forward",
+      "normalized": true,
+      "residual_rms_mm": 1.603435470425186e-08,
+      "residual_max_mm": 4.244679985276889e-08,
+      "singular_values": [
+        2698.1821467611576,
+        2192.6323606811866,
+        9.620612958964022e-07
+      ],
+      "condition": 1.230567511063693,
+      "degenerate": false,
+      "n_points": 3600
+    },
+    "evaluation": {
+      "normal_angle_error_deg": 8.537736462515939e-07,
+      "d_error_mm": -5.105533773530624e-10,
+      "normal_fit_aligned": [
+        0.9805806756894876,
+        -7.63873131415238e-11,
+        0.1961161351453468
+      ],
+      "d_fit_aligned": -98.05806756960256,
+      "normal_true": [
+        0.9805806756909201,
+        0.0,
+        0.19611613513818402
+      ],
+      "d_true": -98.058067569092
+    },
+    "validation": {
+      "n_cases": 10,
+      "n_valid": 10,
+      "n_failed": 0,
+      "all_valid": true,
+      "mean_abs_error_mm": 0.10300857622244167,
+      "max_abs_error_mm": 0.2663640573912289
+    },
+    "per_pose": [
+      {
+        "index": 0,
+        "pnp_rms_px": 1.902896997009113e-05,
+        "n_laser": 240,
+        "n_points": 240,
+        "point_residual_rms_mm": 2.5637740189680562e-08,
+        "point_residual_max_mm": 3.5140544696332654e-08
+      },
+      {
+        "index": 1,
+        "pnp_rms_px": 1.9582855518632245e-05,
+        "n_laser": 240,
+        "n_points": 240,
+        "point_residual_rms_mm": 3.229369482364095e-08,
+        "point_residual_max_mm": 3.817578431153379e-08
+      },
+      {
+        "index": 2,
+        "pnp_rms_px": 1.7962079614138648e-05,
+        "n_laser": 240,
+        "n_points": 240,
+        "point_residual_rms_mm": 5.84130883365639e-09,
+        "point_residual_max_mm": 1.0847656994883437e-08
+      },
+      {
+        "index": 3,
+        "pnp_rms_px": 2.0714563063673766e-05,
+        "n_laser": 240,
+        "n_points": 240,
+        "point_residual_rms_mm": 1.0950153219203749e-08,
+        "point_residual_max_mm": 2.000311383199005e-08
+      },
+      {
+        "index": 4,
+        "pnp_rms_px": 1.8884093079564507e-05,
+        "n_laser": 240,
+        "n_points": 240,
+        "point_residual_rms_mm": 4.741995679264112e-09,
+        "point_residual_max_mm": 8.352913027920295e-09
+      },
+      {
+        "index": 5,
+        "pnp_rms_px": 1.857246670686877e-05,
+        "n_laser": 240,
+        "n_points": 240,
+        "point_residual_rms_mm": 3.101945980912277e-08,
+        "point_residual_max_mm": 3.891007338552299e-08
+      },
+      {
+        "index": 6,
+        "pnp_rms_px": 1.864717952272654e-05,
+        "n_laser": 240,
+        "n_points": 240,
+        "point_residual_rms_mm": 7.927729863784006e-09,
+        "point_residual_max_mm": 1.5709005651842745e-08
+      },
+      {
+        "index": 7,
+        "pnp_rms_px": 1.958260153856219e-05,
+        "n_laser": 240,
+        "n_points": 240,
+        "point_residual_rms_mm": 4.06648722125216e-09,
+        "point_residual_max_mm": 6.3770073666091776e-09
+      },
+      {
+        "index": 8,
+        "pnp_rms_px": 1.7822090723511138e-05,
+        "n_laser": 240,
+        "n_points": 240,
+        "point_residual_rms_mm": 1.3176894048666649e-08,
+        "point_residual_max_mm": 1.4390906244443613e-08
+      },
+      {
+        "index": 9,
+        "pnp_rms_px": 1.9569020027047713e-05,
+        "n_laser": 240,
+        "n_points": 240,
+        "point_residual_rms_mm": 9.305487557017837e-09,
+        "point_residual_max_mm": 1.8539950019658136e-08
+      },
+      {
+        "index": 10,
+        "pnp_rms_px": 1.7332838976923927e-05,
+        "n_laser": 240,
+        "n_points": 240,
+        "point_residual_rms_mm": 4.367632899107854e-09,
+        "point_residual_max_mm": 8.707601750757021e-09
+      },
+      {
+        "index": 11,
+        "pnp_rms_px": 1.903979055705143e-05,
+        "n_laser": 240,
+        "n_points": 240,
+        "point_residual_rms_mm": 6.8345197719769965e-09,
+        "point_residual_max_mm": 1.0229598501609871e-08
+      },
+      {
+        "index": 12,
+        "pnp_rms_px": 1.8170502889895234e-05,
+        "n_laser": 240,
+        "n_points": 240,
+        "point_residual_rms_mm": 3.753557733367596e-09,
+        "point_residual_max_mm": 3.829271122413047e-09
+      },
+      {
+        "index": 13,
+        "pnp_rms_px": 2.019076638730102e-05,
+        "n_laser": 240,
+        "n_points": 240,
+        "point_residual_rms_mm": 3.7250930010785593e-09,
+        "point_residual_max_mm": 7.005567681517277e-09
+      },
+      {
+        "index": 14,
+        "pnp_rms_px": 1.869281377204317e-05,
+        "n_laser": 240,
+        "n_points": 240,
+        "point_residual_rms_mm": 2.4171286980788714e-08,
+        "point_residual_max_mm": 4.244679985276889e-08
+      }
+    ]
+  }
+}

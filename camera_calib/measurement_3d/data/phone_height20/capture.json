@@ -1,0 +1,65 @@
+{
+  "source": "obs",
+  "camera": 2,
+  "backend": "DSHOW",
+  "requested_backend": "dshow",
+  "image_size": [
+    1280,
+    720
+  ],
+  "mode": "measurement",
+  "calibration": "C:\\Users\\wangjianing\\Desktop\\光赛\\camera_calib\\out\\phone\\calib.json",
+  "reference": "C:\\Users\\wangjianing\\Desktop\\光赛\\camera_calib\\measurement_3d\\data\\phone_reference\\frame_01.png",
+  "frames": [
+    {
+      "image": "frame_01.png",
+      "relative_board_angle_deg": 0.5778154099124184,
+      "reprojection_rms_px": 0.30691763758659363
+    },
+    {
+      "image": "frame_02.png",
+      "relative_board_angle_deg": 0.5342262097789693,
+      "reprojection_rms_px": 0.3048739731311798
+    },
+    {
+      "image": "frame_03.png",
+      "relative_board_angle_deg": 0.524497771491838,
+      "reprojection_rms_px": 0.3057466447353363
+    },
+    {
+      "image": "frame_04.png",
+      "relative_board_angle_deg": 0.5741138110769523,
+      "reprojection_rms_px": 0.30813926458358765
+    },
+    {
+      "image": "frame_05.png",
+      "relative_board_angle_deg": 0.5984055122781842,
+      "reprojection_rms_px": 0.31281882524490356
+    },
+    {
+      "image": "frame_06.png",
+      "relative_board_angle_deg": 0.6101160249810031,
+      "reprojection_rms_px": 0.3104359209537506
+    },
+    {
+      "image": "frame_07.png",
+      "relative_board_angle_deg": 0.6195966279568064,
+      "reprojection_rms_px": 0.31066977977752686
+    },
+    {
+      "image": "frame_08.png",
+      "relative_board_angle_deg": 0.6297981513619512,
+      "reprojection_rms_px": 0.31547877192497253
+    },
+    {
+      "image": "frame_09.png",
+      "relative_board_angle_deg": 0.6181638160246711,
+      "reprojection_rms_px": 0.31273409724235535
+    },
+    {
+      "image": "frame_10.png",
+      "relative_board_angle_deg": 0.6289353564491433,
+      "reprojection_rms_px": 0.31334638595581055
+    }
+  ]
+}
