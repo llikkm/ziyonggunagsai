@@ -31,6 +31,8 @@
 
 ## 2. 模块地图
 
+固定点云候选算法：[09_volume_refinement](09_volume_refinement/README.md)，使用编号 07 的估计结果及原 PLY，保留原有基线入口。
+
 独立评价：[08_volume_diagnostics](08_volume_diagnostics/README.md)，只读三组理想扫描，正式估计器不依赖此模块。
 
 新版体积模块：[07_heightmap_volume](07_heightmap_volume/README.md)，正式测量端仅读取点云与采样参数。
@@ -116,6 +118,8 @@ make_board.py
 
 ## 5. 已验证结果（截至 2026-11-26）
 
+09 固定六份 PLY 的候选算法：未舍入 P 理想组 0.012540 → 0.001507，扰动组 0.008014 → 0.001523（此处显示六位）；完整精度与逐件覆盖率见 09 说明。
+
 三件理想扫描 0.5 mm 网格逐格复现；边界和缺口联合 oracle 的 P 为 0.003881，原始值为 0.012540。[误差诊断及优先级](08_volume_diagnostics/README.md)。
 
 新版自动体积：[六组结果及扫描行程](07_heightmap_volume/runs/baseline_20261125/report.md)。原始 P 理想组 0.012540、扰动组 0.008014；直接命中和局部估计分别统计。
@@ -167,6 +171,8 @@ make_board.py
 ---
 
 ## 6. 命令索引
+
+固定 PLY 优化：进入 `09_volume_refinement`，运行 `python -B compare.py`，默认新建目录。
 
 误差诊断：进入 `08_volume_diagnostics`，运行 `python diagnose.py`，输出新目录。
 
@@ -230,7 +236,7 @@ python -m unittest test_volume_scan test_scan_repairs -v   # 20
 
 ---
 
-## 7. 测试矩阵（86 个，全部通过）
+## 7. 测试矩阵（89 个，全部通过）
 
 | 模块 | 测试文件 | 数量 | 命令（在对应目录） |
 | --- | --- | ---: | --- |
@@ -245,7 +251,8 @@ python -m unittest test_volume_scan test_scan_repairs -v   # 20
 | 摄像头采集 | `test_capture3d.py` | 4 | `python -m unittest test_capture3d -v` |
 | 标定细化 | `test_refine_calibration.py` | 1 | `python -m unittest test_refine_calibration -v` |
 | 体积误差诊断 | `test_diagnostics.py` | 5 | `python -m unittest test_diagnostics -v` |
-| **合计** | | **86** | |
+| 固定 PLY 优化 | `test_refined.py` | 3 | `python -B -m unittest test_refined -v` |
+| **合计** | | **89** | |
 
 2026-11-25 全量回归：高度积分 7、新版扫描 5、旧扫描 21、三角测量 19、平面标定 20、实测工具 9，全部通过。独立重放和 `selftest_synthetic.py` 不计入 unittest 数量。
 
@@ -256,6 +263,8 @@ cd 'C:\Users\wangjianing\Desktop\光赛\01_camera_calib'
 Push-Location 05_volume_scan;        python -m unittest test_volume_scan test_scan_repairs -v;        Pop-Location
 Push-Location 06_standard_scan;      python -m unittest test_standard -v; Pop-Location
 Push-Location 07_heightmap_volume;   python -m unittest test_heightmap -v; Pop-Location
+Push-Location 08_volume_diagnostics; python -m unittest test_diagnostics -v; Pop-Location
+Push-Location 09_volume_refinement;  python -B -m unittest test_refined -v; Pop-Location
 Push-Location 03_laser_triangulation; python -m unittest test_laser_lib -v;         Pop-Location
 Push-Location 04_laser_plane_calib;  python -m unittest test_plane_calib test_regressions -v; Pop-Location
 Push-Location 02_measurement_3d;     python -m unittest test_measure3d test_capture3d test_refine_calibration -v; Pop-Location
@@ -352,6 +361,8 @@ hm   = sc.height_map_volume(pc.points_world, base, footprint=known_D)
 ---
 
 ## 12. 变更记录
+
+- **2026-11-26 编号和固定点云优化**：全工程初始备份 `710fd05`，01～08 编号迁移并通过 86 项回归的备份 `255fa14`。模块 09 的结果在其 `runs/fixed_ply_20261126`。候选算法保留 C 的高度偏差供独立实验验证。
 
 - **2026-11-26 体积归因**：新增独立模块 `08_volume_diagnostics`，结果在 `runs/ideal_20261126`（相对模块目录）。原 81 项及新增 5 项测试通过。原算法、原点云和既有测试均未修改。
 
