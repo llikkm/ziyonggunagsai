@@ -21,7 +21,8 @@
 ├─ 06_standard_scan/             新版 A/B/C 建模与扫描
 ├─ 07_heightmap_volume/          归档点云的自动高度积分及评分
 ├─ 08_volume_diagnostics/        体积误差归因
-└─ 09_volume_refinement/         固定 PLY 的轮廓与孔槽保边积分
+├─ 09_volume_refinement/         固定 PLY 的轮廓与孔槽保边积分
+└─ 10_generalization/            冻结算法的独立泛化测试
 ```
 
 新版赛题入口：[标准模型与移动线激光扫描](01_camera_calib/06_standard_scan/README.md) → [高度图体积估计](01_camera_calib/07_heightmap_volume/README.md)。2026-11-25 已完成六组归档点云的覆盖核查和体积评测；[六组结果](01_camera_calib/07_heightmap_volume/runs/baseline_20261125/report.md)。真实激光硬件尚未接入。
@@ -31,3 +32,5 @@
 [理想扫描体积误差诊断报告（2026-11-26）](01_camera_calib/08_volume_diagnostics/README.md)：固定基线、真值对照、网格敏感性及优化顺序。
 
 [09 固定 PLY 优化对照](01_camera_calib/09_volume_refinement/README.md)：原六组点云保持不变，分别比较轮廓定位和保边估计后的体积。原始备份提交 `710fd05`，编号迁移备份 `255fa14`。
+
+[10 独立泛化报告](01_camera_calib/10_generalization/runs/frozen_20261126/REPORT.md)：独立列出开发验证集和最终保留集，每套 9 件、54 次扫描。冻结版本为 `0b82f3b`。

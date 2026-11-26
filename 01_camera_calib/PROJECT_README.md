@@ -31,6 +31,8 @@
 
 ## 2. 模块地图
 
+[10_generalization](10_generalization/README.md) 负责参数化测试件、冻结校验及独立评测；保留集结果不反馈到模块 09。
+
 固定点云候选算法：[09_volume_refinement](09_volume_refinement/README.md)，使用编号 07 的估计结果及原 PLY，保留原有基线入口。
 
 独立评价：[08_volume_diagnostics](08_volume_diagnostics/README.md)，只读三组理想扫描，正式估计器不依赖此模块。
@@ -118,6 +120,8 @@ make_board.py
 
 ## 5. 已验证结果（截至 2026-11-26）
 
+[冻结泛化实验](10_generalization/runs/frozen_20261126/REPORT.md) 的分组统计优先用于判断新目标表现。下文六组标准件数据保留为历史开发基线。
+
 09 固定六份 PLY 的候选算法：未舍入 P 理想组 0.012540 → 0.001507，扰动组 0.008014 → 0.001523（此处显示六位）；完整精度与逐件覆盖率见 09 说明。
 
 三件理想扫描 0.5 mm 网格逐格复现；边界和缺口联合 oracle 的 P 为 0.003881，原始值为 0.012540。[误差诊断及优先级](08_volume_diagnostics/README.md)。
@@ -171,6 +175,8 @@ make_board.py
 ---
 
 ## 6. 命令索引
+
+泛化测试进入 `10_generalization`，依次使用 `benchmark.py prepare/development/holdout`，再用 `report.py` 生成报告，完整命令见模块 README。
 
 固定 PLY 优化：进入 `09_volume_refinement`，运行 `python -B compare.py`，默认新建目录。
 
@@ -236,7 +242,7 @@ python -m unittest test_volume_scan test_scan_repairs -v   # 20
 
 ---
 
-## 7. 测试矩阵（89 个，全部通过）
+## 7. 测试矩阵（92 个，全部通过）
 
 | 模块 | 测试文件 | 数量 | 命令（在对应目录） |
 | --- | --- | ---: | --- |
@@ -252,7 +258,8 @@ python -m unittest test_volume_scan test_scan_repairs -v   # 20
 | 标定细化 | `test_refine_calibration.py` | 1 | `python -m unittest test_refine_calibration -v` |
 | 体积误差诊断 | `test_diagnostics.py` | 5 | `python -m unittest test_diagnostics -v` |
 | 固定 PLY 优化 | `test_refined.py` | 3 | `python -B -m unittest test_refined -v` |
-| **合计** | | **89** | |
+| 冻结和独立模型 | `test_protocol.py` | 3 | `python -B -m unittest test_protocol -v` |
+| **合计** | | **92** | |
 
 2026-11-25 全量回归：高度积分 7、新版扫描 5、旧扫描 21、三角测量 19、平面标定 20、实测工具 9，全部通过。独立重放和 `selftest_synthetic.py` 不计入 unittest 数量。
 
@@ -265,6 +272,7 @@ Push-Location 06_standard_scan;      python -m unittest test_standard -v; Pop-Lo
 Push-Location 07_heightmap_volume;   python -m unittest test_heightmap -v; Pop-Location
 Push-Location 08_volume_diagnostics; python -m unittest test_diagnostics -v; Pop-Location
 Push-Location 09_volume_refinement;  python -B -m unittest test_refined -v; Pop-Location
+Push-Location 10_generalization;     python -B -m unittest test_protocol -v; Pop-Location
 Push-Location 03_laser_triangulation; python -m unittest test_laser_lib -v;         Pop-Location
 Push-Location 04_laser_plane_calib;  python -m unittest test_plane_calib test_regressions -v; Pop-Location
 Push-Location 02_measurement_3d;     python -m unittest test_measure3d test_capture3d test_refine_calibration -v; Pop-Location
@@ -361,6 +369,8 @@ hm   = sc.height_map_volume(pc.points_world, base, footprint=known_D)
 ---
 
 ## 12. 变更记录
+
+- **2026-11-26 独立泛化**：冻结 09 和上游测量源码，模块 10 生成并锁定开发、保留两个清单，固定三种姿态和两种机构模式。逐例结果及失败信息在 `10_generalization/runs/frozen_20261126`。
 
 - **2026-11-26 编号和固定点云优化**：全工程初始备份 `710fd05`，01～08 编号迁移并通过 86 项回归的备份 `255fa14`。模块 09 的结果在其 `runs/fixed_ply_20261126`。候选算法保留 C 的高度偏差供独立实验验证。
 
