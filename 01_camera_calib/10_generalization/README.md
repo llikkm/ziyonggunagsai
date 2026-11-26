@@ -4,6 +4,8 @@
 
 ## 预设方案
 
+[离线模型图集](runs/frozen_20261126/gallery/index.html)：点选模型，再展开任一摆放和运动模式。每件有三维预览和六次扫描的指标对照，每次扫描包含采样状态、共同有效区高度误差和逐格体积误差贡献。坐标为世界 XY；绘图范围覆盖模型和重建网格的并集，保留扫描范围外的漏测。
+
 冻结 Git 提交 `0b82f3b5940ad9a715ba3428376cd0d2104bd5ac` 的 09 `refine` 和上游模块。启动前检查五个算法源文件的 Git blob；两套模型、采集程序及统计脚本均在第一次扫描以前锁定摘要。开发种子 17291，保留种子 84317，两套模型分别落盘；先跑开发，随后原样跑保留集。每套 A/B/C 各 3 件，每件三次摆放：(0,0,0°)、(7,−5,24°)、(−9,7,53°)，XY 单位 mm。相同摆放各执行理想扫描和原三轴平移扰动，合计 108 次，每次 63 帧。
 
 规格依据项目内 2026-11-17 区赛参考细则赛题 2（PDF 第 10 页）；没有核实到更新的全国决赛细则。每件模型在自身坐标系中三个轴向尺寸均在 50～120 mm，实体体积在 50000～800000 mm³。分区生成的 B 件特征互不重叠，矩形槽长宽至少 15 mm，圆盲孔含 Φ15 mm、深 5 mm 的极限组合；其他组合加入斜台、台阶。底部平整，孔槽均为垂直侧壁。C 件顶面是光滑高度函数，使用偏心高斯峰、组合峰、鞍面和弯脊。几何预检核对封闭性及尺寸。评价基准取**实际送入渲染的封闭三角网格体积**；曲面与圆弧采用有限面片近似。
@@ -17,6 +19,7 @@ python -B benchmark.py prepare runs/repeat
 python -B benchmark.py development runs/repeat
 python -B benchmark.py holdout runs/repeat
 python -B postcheck.py runs/repeat
+python -B gallery.py runs/repeat
 python -B report.py runs/repeat
 python -B -m unittest test_protocol -v
 ```

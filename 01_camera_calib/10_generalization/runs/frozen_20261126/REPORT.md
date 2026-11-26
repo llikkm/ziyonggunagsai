@@ -2,6 +2,8 @@
 
 固定版本 0b82f3b；几何模型为统计分组单位，同件的六次扫描为重复测量。
 
+[逐模型预览与逐次扫描空间误差图集](gallery/index.html)
+
 ## 开发验证集（种子 17291）
 
 [逐次结果](development/results.csv) · [清单](development/models/manifest.json) · [完整精度汇总](development/summary.json)

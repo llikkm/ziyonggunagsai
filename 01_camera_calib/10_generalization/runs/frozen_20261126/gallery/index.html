@@ -1,0 +1,150 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>泛化扫描图集</title>
+<style>body{font:16px/1.6 system-ui;margin:auto;padding:2rem;max-width:1220px;color:#153345;background:#f6f8f7}article{background:white;margin:2rem 0;padding:1rem 2rem;border-radius:.8rem}img{max-width:100%;height:auto}a{color:#165e79}summary{cursor:pointer;padding:.4rem}nav{display:flex;flex-wrap:wrap;gap:.6em}h2{border-bottom:2px solid #377c89}</style><main>
+<h1>泛化测试 · 模型与测量图集</h1><p>每件先看三维参考几何与六次扫描指标，再展开姿态查看空间误差；图片可点开原尺寸。p0 / p1 / p2 分别为 (0, 0, 0°)、(7, -5, 24°)、(-9, 7, 53°)，平移单位 mm。</p>
+<p>黑线：真实轮廓；红虚线：测量轮廓。高度误差仅显示共同有效格，红为偏高、蓝为偏低；体积贡献包含外扩和漏测。两种误差图分别在 ±0.5 mm 和 ±12.5 mm³ 处饱和。白色为无对应值。覆盖率分母为自动足迹。</p>
+<h2>开发验证集</h2><nav><a href="#development-A1">A1 圆锥</a> <a href="#development-A2">A2 四棱锥</a> <a href="#development-A3">A3 六棱柱</a> <a href="#development-B1">B1 槽＋盲孔</a> <a href="#development-B2">B2 槽＋斜台</a> <a href="#development-B3">B3 台阶＋盲孔</a> <a href="#development-C1">C1 偏心单峰</a> <a href="#development-C2">C2 双峰</a> <a href="#development-C3">C3 鞍面</a></nav>
+<h2>最终保留集</h2><nav><a href="#holdout-A1">A1 球冠</a> <a href="#holdout-A2">A2 三棱锥</a> <a href="#holdout-A3">A3 六棱柱</a> <a href="#holdout-B1">B1 斜台＋盲孔</a> <a href="#holdout-B2">B2 槽＋台阶</a> <a href="#holdout-B3">B3 槽＋盲孔</a> <a href="#holdout-C1">C1 非对称单峰</a> <a href="#holdout-C2">C2 三峰</a> <a href="#holdout-C3">C3 弯脊</a></nav>
+<article id="development-A1"><h2>开发验证集 · A1   圆锥</h2><a href="development/A1/preview.png"><img loading="lazy" src="development/A1/preview.png" alt="开发验证集 · A1   圆锥"></a>
+<details><summary>p0 · 理想　-1.864%　查看空间误差</summary><a href="development/A1/p0_ideal.png"><img loading="lazy" src="development/A1/p0_ideal.png" alt="p0_ideal"></a></details>
+<details><summary>p0 · 扰动　-1.754%　查看空间误差</summary><a href="development/A1/p0_jitter.png"><img loading="lazy" src="development/A1/p0_jitter.png" alt="p0_jitter"></a></details>
+<details><summary>p1 · 理想　-1.976%　查看空间误差</summary><a href="development/A1/p1_ideal.png"><img loading="lazy" src="development/A1/p1_ideal.png" alt="p1_ideal"></a></details>
+<details><summary>p1 · 扰动　-1.461%　查看空间误差</summary><a href="development/A1/p1_jitter.png"><img loading="lazy" src="development/A1/p1_jitter.png" alt="p1_jitter"></a></details>
+<details><summary>p2 · 理想　-1.986%　查看空间误差</summary><a href="development/A1/p2_ideal.png"><img loading="lazy" src="development/A1/p2_ideal.png" alt="p2_ideal"></a></details>
+<details><summary>p2 · 扰动　-2.028%　查看空间误差</summary><a href="development/A1/p2_jitter.png"><img loading="lazy" src="development/A1/p2_jitter.png" alt="p2_jitter"></a></details>
+<a href="#">回到索引</a></article>
+<article id="development-A2"><h2>开发验证集 · A2   四棱锥</h2><a href="development/A2/preview.png"><img loading="lazy" src="development/A2/preview.png" alt="开发验证集 · A2   四棱锥"></a>
+<details><summary>p0 · 理想　-2.090%　查看空间误差</summary><a href="development/A2/p0_ideal.png"><img loading="lazy" src="development/A2/p0_ideal.png" alt="p0_ideal"></a></details>
+<details><summary>p0 · 扰动　-2.243%　查看空间误差</summary><a href="development/A2/p0_jitter.png"><img loading="lazy" src="development/A2/p0_jitter.png" alt="p0_jitter"></a></details>
+<details><summary>p1 · 理想　-2.241%　查看空间误差</summary><a href="development/A2/p1_ideal.png"><img loading="lazy" src="development/A2/p1_ideal.png" alt="p1_ideal"></a></details>
+<details><summary>p1 · 扰动　-2.670%　查看空间误差</summary><a href="development/A2/p1_jitter.png"><img loading="lazy" src="development/A2/p1_jitter.png" alt="p1_jitter"></a></details>
+<details><summary>p2 · 理想　-3.485%　查看空间误差</summary><a href="development/A2/p2_ideal.png"><img loading="lazy" src="development/A2/p2_ideal.png" alt="p2_ideal"></a></details>
+<details><summary>p2 · 扰动　-3.374%　查看空间误差</summary><a href="development/A2/p2_jitter.png"><img loading="lazy" src="development/A2/p2_jitter.png" alt="p2_jitter"></a></details>
+<a href="#">回到索引</a></article>
+<article id="development-A3"><h2>开发验证集 · A3   六棱柱</h2><a href="development/A3/preview.png"><img loading="lazy" src="development/A3/preview.png" alt="开发验证集 · A3   六棱柱"></a>
+<details><summary>p0 · 理想　+0.206%　查看空间误差</summary><a href="development/A3/p0_ideal.png"><img loading="lazy" src="development/A3/p0_ideal.png" alt="p0_ideal"></a></details>
+<details><summary>p0 · 扰动　+0.204%　查看空间误差</summary><a href="development/A3/p0_jitter.png"><img loading="lazy" src="development/A3/p0_jitter.png" alt="p0_jitter"></a></details>
+<details><summary>p1 · 理想　+0.743%　查看空间误差</summary><a href="development/A3/p1_ideal.png"><img loading="lazy" src="development/A3/p1_ideal.png" alt="p1_ideal"></a></details>
+<details><summary>p1 · 扰动　+0.780%　查看空间误差</summary><a href="development/A3/p1_jitter.png"><img loading="lazy" src="development/A3/p1_jitter.png" alt="p1_jitter"></a></details>
+<details><summary>p2 · 理想　+0.670%　查看空间误差</summary><a href="development/A3/p2_ideal.png"><img loading="lazy" src="development/A3/p2_ideal.png" alt="p2_ideal"></a></details>
+<details><summary>p2 · 扰动　+0.413%　查看空间误差</summary><a href="development/A3/p2_jitter.png"><img loading="lazy" src="development/A3/p2_jitter.png" alt="p2_jitter"></a></details>
+<a href="#">回到索引</a></article>
+<article id="development-B1"><h2>开发验证集 · B1   槽＋盲孔</h2><a href="development/B1/preview.png"><img loading="lazy" src="development/B1/preview.png" alt="开发验证集 · B1   槽＋盲孔"></a>
+<details><summary>p0 · 理想　-3.364%　查看空间误差</summary><a href="development/B1/p0_ideal.png"><img loading="lazy" src="development/B1/p0_ideal.png" alt="p0_ideal"></a></details>
+<details><summary>p0 · 扰动　-0.045%　查看空间误差</summary><a href="development/B1/p0_jitter.png"><img loading="lazy" src="development/B1/p0_jitter.png" alt="p0_jitter"></a></details>
+<details><summary>p1 · 理想　-0.080%　查看空间误差</summary><a href="development/B1/p1_ideal.png"><img loading="lazy" src="development/B1/p1_ideal.png" alt="p1_ideal"></a></details>
+<details><summary>p1 · 扰动　+0.119%　查看空间误差</summary><a href="development/B1/p1_jitter.png"><img loading="lazy" src="development/B1/p1_jitter.png" alt="p1_jitter"></a></details>
+<details><summary>p2 · 理想　-1.040%　查看空间误差</summary><a href="development/B1/p2_ideal.png"><img loading="lazy" src="development/B1/p2_ideal.png" alt="p2_ideal"></a></details>
+<details><summary>p2 · 扰动　-0.900%　查看空间误差</summary><a href="development/B1/p2_jitter.png"><img loading="lazy" src="development/B1/p2_jitter.png" alt="p2_jitter"></a></details>
+<a href="#">回到索引</a></article>
+<article id="development-B2"><h2>开发验证集 · B2   槽＋斜台</h2><a href="development/B2/preview.png"><img loading="lazy" src="development/B2/preview.png" alt="开发验证集 · B2   槽＋斜台"></a>
+<details><summary>p0 · 理想　-0.566%　查看空间误差</summary><a href="development/B2/p0_ideal.png"><img loading="lazy" src="development/B2/p0_ideal.png" alt="p0_ideal"></a></details>
+<details><summary>p0 · 扰动　-0.355%　查看空间误差</summary><a href="development/B2/p0_jitter.png"><img loading="lazy" src="development/B2/p0_jitter.png" alt="p0_jitter"></a></details>
+<details><summary>p1 · 理想　-0.801%　查看空间误差</summary><a href="development/B2/p1_ideal.png"><img loading="lazy" src="development/B2/p1_ideal.png" alt="p1_ideal"></a></details>
+<details><summary>p1 · 扰动　-0.661%　查看空间误差</summary><a href="development/B2/p1_jitter.png"><img loading="lazy" src="development/B2/p1_jitter.png" alt="p1_jitter"></a></details>
+<details><summary>p2 · 理想　-3.114%　查看空间误差</summary><a href="development/B2/p2_ideal.png"><img loading="lazy" src="development/B2/p2_ideal.png" alt="p2_ideal"></a></details>
+<details><summary>p2 · 扰动　-3.006%　查看空间误差</summary><a href="development/B2/p2_jitter.png"><img loading="lazy" src="development/B2/p2_jitter.png" alt="p2_jitter"></a></details>
+<a href="#">回到索引</a></article>
+<article id="development-B3"><h2>开发验证集 · B3   台阶＋盲孔</h2><a href="development/B3/preview.png"><img loading="lazy" src="development/B3/preview.png" alt="开发验证集 · B3   台阶＋盲孔"></a>
+<details><summary>p0 · 理想　+0.200%　查看空间误差</summary><a href="development/B3/p0_ideal.png"><img loading="lazy" src="development/B3/p0_ideal.png" alt="p0_ideal"></a></details>
+<details><summary>p0 · 扰动　-2.205%　查看空间误差</summary><a href="development/B3/p0_jitter.png"><img loading="lazy" src="development/B3/p0_jitter.png" alt="p0_jitter"></a></details>
+<details><summary>p1 · 理想　-0.878%　查看空间误差</summary><a href="development/B3/p1_ideal.png"><img loading="lazy" src="development/B3/p1_ideal.png" alt="p1_ideal"></a></details>
+<details><summary>p1 · 扰动　-0.983%　查看空间误差</summary><a href="development/B3/p1_jitter.png"><img loading="lazy" src="development/B3/p1_jitter.png" alt="p1_jitter"></a></details>
+<details><summary>p2 · 理想　-3.118%　查看空间误差</summary><a href="development/B3/p2_ideal.png"><img loading="lazy" src="development/B3/p2_ideal.png" alt="p2_ideal"></a></details>
+<details><summary>p2 · 扰动　-3.047%　查看空间误差</summary><a href="development/B3/p2_jitter.png"><img loading="lazy" src="development/B3/p2_jitter.png" alt="p2_jitter"></a></details>
+<a href="#">回到索引</a></article>
+<article id="development-C1"><h2>开发验证集 · C1   偏心单峰</h2><a href="development/C1/preview.png"><img loading="lazy" src="development/C1/preview.png" alt="开发验证集 · C1   偏心单峰"></a>
+<details><summary>p0 · 理想　+1.315%　查看空间误差</summary><a href="development/C1/p0_ideal.png"><img loading="lazy" src="development/C1/p0_ideal.png" alt="p0_ideal"></a></details>
+<details><summary>p0 · 扰动　+1.313%　查看空间误差</summary><a href="development/C1/p0_jitter.png"><img loading="lazy" src="development/C1/p0_jitter.png" alt="p0_jitter"></a></details>
+<details><summary>p1 · 理想　-0.122%　查看空间误差</summary><a href="development/C1/p1_ideal.png"><img loading="lazy" src="development/C1/p1_ideal.png" alt="p1_ideal"></a></details>
+<details><summary>p1 · 扰动　-0.200%　查看空间误差</summary><a href="development/C1/p1_jitter.png"><img loading="lazy" src="development/C1/p1_jitter.png" alt="p1_jitter"></a></details>
+<details><summary>p2 · 理想　-2.651%　查看空间误差</summary><a href="development/C1/p2_ideal.png"><img loading="lazy" src="development/C1/p2_ideal.png" alt="p2_ideal"></a></details>
+<details><summary>p2 · 扰动　-2.645%　查看空间误差</summary><a href="development/C1/p2_jitter.png"><img loading="lazy" src="development/C1/p2_jitter.png" alt="p2_jitter"></a></details>
+<a href="#">回到索引</a></article>
+<article id="development-C2"><h2>开发验证集 · C2   双峰</h2><a href="development/C2/preview.png"><img loading="lazy" src="development/C2/preview.png" alt="开发验证集 · C2   双峰"></a>
+<details><summary>p0 · 理想　-0.175%　查看空间误差</summary><a href="development/C2/p0_ideal.png"><img loading="lazy" src="development/C2/p0_ideal.png" alt="p0_ideal"></a></details>
+<details><summary>p0 · 扰动　+0.019%　查看空间误差</summary><a href="development/C2/p0_jitter.png"><img loading="lazy" src="development/C2/p0_jitter.png" alt="p0_jitter"></a></details>
+<details><summary>p1 · 理想　+0.699%　查看空间误差</summary><a href="development/C2/p1_ideal.png"><img loading="lazy" src="development/C2/p1_ideal.png" alt="p1_ideal"></a></details>
+<details><summary>p1 · 扰动　+0.438%　查看空间误差</summary><a href="development/C2/p1_jitter.png"><img loading="lazy" src="development/C2/p1_jitter.png" alt="p1_jitter"></a></details>
+<details><summary>p2 · 理想　-1.004%　查看空间误差</summary><a href="development/C2/p2_ideal.png"><img loading="lazy" src="development/C2/p2_ideal.png" alt="p2_ideal"></a></details>
+<details><summary>p2 · 扰动　-0.992%　查看空间误差</summary><a href="development/C2/p2_jitter.png"><img loading="lazy" src="development/C2/p2_jitter.png" alt="p2_jitter"></a></details>
+<a href="#">回到索引</a></article>
+<article id="development-C3"><h2>开发验证集 · C3   鞍面</h2><a href="development/C3/preview.png"><img loading="lazy" src="development/C3/preview.png" alt="开发验证集 · C3   鞍面"></a>
+<details><summary>p0 · 理想　-0.645%　查看空间误差</summary><a href="development/C3/p0_ideal.png"><img loading="lazy" src="development/C3/p0_ideal.png" alt="p0_ideal"></a></details>
+<details><summary>p0 · 扰动　-0.403%　查看空间误差</summary><a href="development/C3/p0_jitter.png"><img loading="lazy" src="development/C3/p0_jitter.png" alt="p0_jitter"></a></details>
+<details><summary>p1 · 理想　-1.030%　查看空间误差</summary><a href="development/C3/p1_ideal.png"><img loading="lazy" src="development/C3/p1_ideal.png" alt="p1_ideal"></a></details>
+<details><summary>p1 · 扰动　-0.876%　查看空间误差</summary><a href="development/C3/p1_jitter.png"><img loading="lazy" src="development/C3/p1_jitter.png" alt="p1_jitter"></a></details>
+<details><summary>p2 · 理想　-4.158%　查看空间误差</summary><a href="development/C3/p2_ideal.png"><img loading="lazy" src="development/C3/p2_ideal.png" alt="p2_ideal"></a></details>
+<details><summary>p2 · 扰动　-4.172%　查看空间误差</summary><a href="development/C3/p2_jitter.png"><img loading="lazy" src="development/C3/p2_jitter.png" alt="p2_jitter"></a></details>
+<a href="#">回到索引</a></article>
+<article id="holdout-A1"><h2>最终保留集 · A1   球冠</h2><a href="holdout/A1/preview.png"><img loading="lazy" src="holdout/A1/preview.png" alt="最终保留集 · A1   球冠"></a>
+<details><summary>p0 · 理想　-5.086%　查看空间误差</summary><a href="holdout/A1/p0_ideal.png"><img loading="lazy" src="holdout/A1/p0_ideal.png" alt="p0_ideal"></a></details>
+<details><summary>p0 · 扰动　-5.280%　查看空间误差</summary><a href="holdout/A1/p0_jitter.png"><img loading="lazy" src="holdout/A1/p0_jitter.png" alt="p0_jitter"></a></details>
+<details><summary>p1 · 理想　-5.107%　查看空间误差</summary><a href="holdout/A1/p1_ideal.png"><img loading="lazy" src="holdout/A1/p1_ideal.png" alt="p1_ideal"></a></details>
+<details><summary>p1 · 扰动　-5.140%　查看空间误差</summary><a href="holdout/A1/p1_jitter.png"><img loading="lazy" src="holdout/A1/p1_jitter.png" alt="p1_jitter"></a></details>
+<details><summary>p2 · 理想　-6.493%　查看空间误差</summary><a href="holdout/A1/p2_ideal.png"><img loading="lazy" src="holdout/A1/p2_ideal.png" alt="p2_ideal"></a></details>
+<details><summary>p2 · 扰动　-6.232%　查看空间误差</summary><a href="holdout/A1/p2_jitter.png"><img loading="lazy" src="holdout/A1/p2_jitter.png" alt="p2_jitter"></a></details>
+<a href="#">回到索引</a></article>
+<article id="holdout-A2"><h2>最终保留集 · A2   三棱锥</h2><a href="holdout/A2/preview.png"><img loading="lazy" src="holdout/A2/preview.png" alt="最终保留集 · A2   三棱锥"></a>
+<details><summary>p0 · 理想　-4.832%　查看空间误差</summary><a href="holdout/A2/p0_ideal.png"><img loading="lazy" src="holdout/A2/p0_ideal.png" alt="p0_ideal"></a></details>
+<details><summary>p0 · 扰动　-5.130%　查看空间误差</summary><a href="holdout/A2/p0_jitter.png"><img loading="lazy" src="holdout/A2/p0_jitter.png" alt="p0_jitter"></a></details>
+<details><summary>p1 · 理想　-2.712%　查看空间误差</summary><a href="holdout/A2/p1_ideal.png"><img loading="lazy" src="holdout/A2/p1_ideal.png" alt="p1_ideal"></a></details>
+<details><summary>p1 · 扰动　-3.015%　查看空间误差</summary><a href="holdout/A2/p1_jitter.png"><img loading="lazy" src="holdout/A2/p1_jitter.png" alt="p1_jitter"></a></details>
+<details><summary>p2 · 理想　-2.215%　查看空间误差</summary><a href="holdout/A2/p2_ideal.png"><img loading="lazy" src="holdout/A2/p2_ideal.png" alt="p2_ideal"></a></details>
+<details><summary>p2 · 扰动　-2.613%　查看空间误差</summary><a href="holdout/A2/p2_jitter.png"><img loading="lazy" src="holdout/A2/p2_jitter.png" alt="p2_jitter"></a></details>
+<a href="#">回到索引</a></article>
+<article id="holdout-A3"><h2>最终保留集 · A3   六棱柱</h2><a href="holdout/A3/preview.png"><img loading="lazy" src="holdout/A3/preview.png" alt="最终保留集 · A3   六棱柱"></a>
+<details><summary>p0 · 理想　+0.759%　查看空间误差</summary><a href="holdout/A3/p0_ideal.png"><img loading="lazy" src="holdout/A3/p0_ideal.png" alt="p0_ideal"></a></details>
+<details><summary>p0 · 扰动　+0.425%　查看空间误差</summary><a href="holdout/A3/p0_jitter.png"><img loading="lazy" src="holdout/A3/p0_jitter.png" alt="p0_jitter"></a></details>
+<details><summary>p1 · 理想　+0.499%　查看空间误差</summary><a href="holdout/A3/p1_ideal.png"><img loading="lazy" src="holdout/A3/p1_ideal.png" alt="p1_ideal"></a></details>
+<details><summary>p1 · 扰动　+0.378%　查看空间误差</summary><a href="holdout/A3/p1_jitter.png"><img loading="lazy" src="holdout/A3/p1_jitter.png" alt="p1_jitter"></a></details>
+<details><summary>p2 · 理想　+0.693%　查看空间误差</summary><a href="holdout/A3/p2_ideal.png"><img loading="lazy" src="holdout/A3/p2_ideal.png" alt="p2_ideal"></a></details>
+<details><summary>p2 · 扰动　+0.766%　查看空间误差</summary><a href="holdout/A3/p2_jitter.png"><img loading="lazy" src="holdout/A3/p2_jitter.png" alt="p2_jitter"></a></details>
+<a href="#">回到索引</a></article>
+<article id="holdout-B1"><h2>最终保留集 · B1   斜台＋盲孔</h2><a href="holdout/B1/preview.png"><img loading="lazy" src="holdout/B1/preview.png" alt="最终保留集 · B1   斜台＋盲孔"></a>
+<details><summary>p0 · 理想　+0.287%　查看空间误差</summary><a href="holdout/B1/p0_ideal.png"><img loading="lazy" src="holdout/B1/p0_ideal.png" alt="p0_ideal"></a></details>
+<details><summary>p0 · 扰动　-0.188%　查看空间误差</summary><a href="holdout/B1/p0_jitter.png"><img loading="lazy" src="holdout/B1/p0_jitter.png" alt="p0_jitter"></a></details>
+<details><summary>p1 · 理想　+0.136%　查看空间误差</summary><a href="holdout/B1/p1_ideal.png"><img loading="lazy" src="holdout/B1/p1_ideal.png" alt="p1_ideal"></a></details>
+<details><summary>p1 · 扰动　+0.402%　查看空间误差</summary><a href="holdout/B1/p1_jitter.png"><img loading="lazy" src="holdout/B1/p1_jitter.png" alt="p1_jitter"></a></details>
+<details><summary>p2 · 理想　-1.399%　查看空间误差</summary><a href="holdout/B1/p2_ideal.png"><img loading="lazy" src="holdout/B1/p2_ideal.png" alt="p2_ideal"></a></details>
+<details><summary>p2 · 扰动　-1.207%　查看空间误差</summary><a href="holdout/B1/p2_jitter.png"><img loading="lazy" src="holdout/B1/p2_jitter.png" alt="p2_jitter"></a></details>
+<a href="#">回到索引</a></article>
+<article id="holdout-B2"><h2>最终保留集 · B2   槽＋台阶</h2><a href="holdout/B2/preview.png"><img loading="lazy" src="holdout/B2/preview.png" alt="最终保留集 · B2   槽＋台阶"></a>
+<details><summary>p0 · 理想　-0.490%　查看空间误差</summary><a href="holdout/B2/p0_ideal.png"><img loading="lazy" src="holdout/B2/p0_ideal.png" alt="p0_ideal"></a></details>
+<details><summary>p0 · 扰动　-1.121%　查看空间误差</summary><a href="holdout/B2/p0_jitter.png"><img loading="lazy" src="holdout/B2/p0_jitter.png" alt="p0_jitter"></a></details>
+<details><summary>p1 · 理想　+0.447%　查看空间误差</summary><a href="holdout/B2/p1_ideal.png"><img loading="lazy" src="holdout/B2/p1_ideal.png" alt="p1_ideal"></a></details>
+<details><summary>p1 · 扰动　+0.385%　查看空间误差</summary><a href="holdout/B2/p1_jitter.png"><img loading="lazy" src="holdout/B2/p1_jitter.png" alt="p1_jitter"></a></details>
+<details><summary>p2 · 理想　-1.408%　查看空间误差</summary><a href="holdout/B2/p2_ideal.png"><img loading="lazy" src="holdout/B2/p2_ideal.png" alt="p2_ideal"></a></details>
+<details><summary>p2 · 扰动　-1.454%　查看空间误差</summary><a href="holdout/B2/p2_jitter.png"><img loading="lazy" src="holdout/B2/p2_jitter.png" alt="p2_jitter"></a></details>
+<a href="#">回到索引</a></article>
+<article id="holdout-B3"><h2>最终保留集 · B3   槽＋盲孔</h2><a href="holdout/B3/preview.png"><img loading="lazy" src="holdout/B3/preview.png" alt="最终保留集 · B3   槽＋盲孔"></a>
+<details><summary>p0 · 理想　+0.391%　查看空间误差</summary><a href="holdout/B3/p0_ideal.png"><img loading="lazy" src="holdout/B3/p0_ideal.png" alt="p0_ideal"></a></details>
+<details><summary>p0 · 扰动　+0.299%　查看空间误差</summary><a href="holdout/B3/p0_jitter.png"><img loading="lazy" src="holdout/B3/p0_jitter.png" alt="p0_jitter"></a></details>
+<details><summary>p1 · 理想　-0.213%　查看空间误差</summary><a href="holdout/B3/p1_ideal.png"><img loading="lazy" src="holdout/B3/p1_ideal.png" alt="p1_ideal"></a></details>
+<details><summary>p1 · 扰动　-0.178%　查看空间误差</summary><a href="holdout/B3/p1_jitter.png"><img loading="lazy" src="holdout/B3/p1_jitter.png" alt="p1_jitter"></a></details>
+<details><summary>p2 · 理想　-2.382%　查看空间误差</summary><a href="holdout/B3/p2_ideal.png"><img loading="lazy" src="holdout/B3/p2_ideal.png" alt="p2_ideal"></a></details>
+<details><summary>p2 · 扰动　-2.368%　查看空间误差</summary><a href="holdout/B3/p2_jitter.png"><img loading="lazy" src="holdout/B3/p2_jitter.png" alt="p2_jitter"></a></details>
+<a href="#">回到索引</a></article>
+<article id="holdout-C1"><h2>最终保留集 · C1   非对称单峰</h2><a href="holdout/C1/preview.png"><img loading="lazy" src="holdout/C1/preview.png" alt="最终保留集 · C1   非对称单峰"></a>
+<details><summary>p0 · 理想　+0.823%　查看空间误差</summary><a href="holdout/C1/p0_ideal.png"><img loading="lazy" src="holdout/C1/p0_ideal.png" alt="p0_ideal"></a></details>
+<details><summary>p0 · 扰动　+0.683%　查看空间误差</summary><a href="holdout/C1/p0_jitter.png"><img loading="lazy" src="holdout/C1/p0_jitter.png" alt="p0_jitter"></a></details>
+<details><summary>p1 · 理想　+0.273%　查看空间误差</summary><a href="holdout/C1/p1_ideal.png"><img loading="lazy" src="holdout/C1/p1_ideal.png" alt="p1_ideal"></a></details>
+<details><summary>p1 · 扰动　+0.353%　查看空间误差</summary><a href="holdout/C1/p1_jitter.png"><img loading="lazy" src="holdout/C1/p1_jitter.png" alt="p1_jitter"></a></details>
+<details><summary>p2 · 理想　-1.762%　查看空间误差</summary><a href="holdout/C1/p2_ideal.png"><img loading="lazy" src="holdout/C1/p2_ideal.png" alt="p2_ideal"></a></details>
+<details><summary>p2 · 扰动　-1.833%　查看空间误差</summary><a href="holdout/C1/p2_jitter.png"><img loading="lazy" src="holdout/C1/p2_jitter.png" alt="p2_jitter"></a></details>
+<a href="#">回到索引</a></article>
+<article id="holdout-C2"><h2>最终保留集 · C2   三峰</h2><a href="holdout/C2/preview.png"><img loading="lazy" src="holdout/C2/preview.png" alt="最终保留集 · C2   三峰"></a>
+<details><summary>p0 · 理想　+0.118%　查看空间误差</summary><a href="holdout/C2/p0_ideal.png"><img loading="lazy" src="holdout/C2/p0_ideal.png" alt="p0_ideal"></a></details>
+<details><summary>p0 · 扰动　+0.288%　查看空间误差</summary><a href="holdout/C2/p0_jitter.png"><img loading="lazy" src="holdout/C2/p0_jitter.png" alt="p0_jitter"></a></details>
+<details><summary>p1 · 理想　-0.029%　查看空间误差</summary><a href="holdout/C2/p1_ideal.png"><img loading="lazy" src="holdout/C2/p1_ideal.png" alt="p1_ideal"></a></details>
+<details><summary>p1 · 扰动　+0.170%　查看空间误差</summary><a href="holdout/C2/p1_jitter.png"><img loading="lazy" src="holdout/C2/p1_jitter.png" alt="p1_jitter"></a></details>
+<details><summary>p2 · 理想　-1.734%　查看空间误差</summary><a href="holdout/C2/p2_ideal.png"><img loading="lazy" src="holdout/C2/p2_ideal.png" alt="p2_ideal"></a></details>
+<details><summary>p2 · 扰动　-1.733%　查看空间误差</summary><a href="holdout/C2/p2_jitter.png"><img loading="lazy" src="holdout/C2/p2_jitter.png" alt="p2_jitter"></a></details>
+<a href="#">回到索引</a></article>
+<article id="holdout-C3"><h2>最终保留集 · C3   弯脊</h2><a href="holdout/C3/preview.png"><img loading="lazy" src="holdout/C3/preview.png" alt="最终保留集 · C3   弯脊"></a>
+<details><summary>p0 · 理想　-0.996%　查看空间误差</summary><a href="holdout/C3/p0_ideal.png"><img loading="lazy" src="holdout/C3/p0_ideal.png" alt="p0_ideal"></a></details>
+<details><summary>p0 · 扰动　+1.146%　查看空间误差</summary><a href="holdout/C3/p0_jitter.png"><img loading="lazy" src="holdout/C3/p0_jitter.png" alt="p0_jitter"></a></details>
+<details><summary>p1 · 理想　+1.506%　查看空间误差</summary><a href="holdout/C3/p1_ideal.png"><img loading="lazy" src="holdout/C3/p1_ideal.png" alt="p1_ideal"></a></details>
+<details><summary>p1 · 扰动　+1.457%　查看空间误差</summary><a href="holdout/C3/p1_jitter.png"><img loading="lazy" src="holdout/C3/p1_jitter.png" alt="p1_jitter"></a></details>
+<details><summary>p2 · 理想　-2.386%　查看空间误差</summary><a href="holdout/C3/p2_ideal.png"><img loading="lazy" src="holdout/C3/p2_ideal.png" alt="p2_ideal"></a></details>
+<details><summary>p2 · 扰动　-2.313%　查看空间误差</summary><a href="holdout/C3/p2_jitter.png"><img loading="lazy" src="holdout/C3/p2_jitter.png" alt="p2_jitter"></a></details>
+<a href="#">回到索引</a></article></main></html>

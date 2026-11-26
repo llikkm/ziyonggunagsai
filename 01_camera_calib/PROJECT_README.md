@@ -242,7 +242,7 @@ python -m unittest test_volume_scan test_scan_repairs -v   # 20
 
 ---
 
-## 7. 测试矩阵（92 个，全部通过）
+## 7. 测试矩阵（93 个，全部通过）
 
 | 模块 | 测试文件 | 数量 | 命令（在对应目录） |
 | --- | --- | ---: | --- |
@@ -259,7 +259,8 @@ python -m unittest test_volume_scan test_scan_repairs -v   # 20
 | 体积误差诊断 | `test_diagnostics.py` | 5 | `python -m unittest test_diagnostics -v` |
 | 固定 PLY 优化 | `test_refined.py` | 3 | `python -B -m unittest test_refined -v` |
 | 冻结和独立模型 | `test_protocol.py` | 3 | `python -B -m unittest test_protocol -v` |
-| **合计** | | **92** | |
+| 图集误差计算 | `test_gallery.py` | 1 | `python -B -m unittest test_gallery -v` |
+| **合计** | | **93** | |
 
 2026-11-25 全量回归：高度积分 7、新版扫描 5、旧扫描 21、三角测量 19、平面标定 20、实测工具 9，全部通过。独立重放和 `selftest_synthetic.py` 不计入 unittest 数量。
 
@@ -272,7 +273,7 @@ Push-Location 06_standard_scan;      python -m unittest test_standard -v; Pop-Lo
 Push-Location 07_heightmap_volume;   python -m unittest test_heightmap -v; Pop-Location
 Push-Location 08_volume_diagnostics; python -m unittest test_diagnostics -v; Pop-Location
 Push-Location 09_volume_refinement;  python -B -m unittest test_refined -v; Pop-Location
-Push-Location 10_generalization;     python -B -m unittest test_protocol -v; Pop-Location
+Push-Location 10_generalization;     python -B -m unittest test_protocol test_gallery -v; Pop-Location
 Push-Location 03_laser_triangulation; python -m unittest test_laser_lib -v;         Pop-Location
 Push-Location 04_laser_plane_calib;  python -m unittest test_plane_calib test_regressions -v; Pop-Location
 Push-Location 02_measurement_3d;     python -m unittest test_measure3d test_capture3d test_refine_calibration -v; Pop-Location
@@ -351,6 +352,8 @@ hm   = sc.height_map_volume(pc.points_world, base, footprint=known_D)
 
 ## 11. 维护规则（给后续对话/智能体）
 
+**所有后续仿真须交付可视化结果。** 逐模型生成形貌预览，逐工况生成输出及误差图；覆盖率注明分母，单列直接测量、估计和缺测。没有几何模型的实验按任务选用曲线、残差或对照图。图表注明单位和色标，使用同一次运行的归档数据，失败样本保留说明。报告链接到图集，模块 README 提供生成命令；验收时核对样本覆盖、图片可读性和数值一致性。参照[模块 10 完整图集](10_generalization/runs/frozen_20261126/gallery/index.html)。
+
 修改已有代码后必须完成一次 Git 远端备份：验证、提交、推送，核对 origin/main 的提交号。目录迁移单独提交并先上传，算法变更另行提交。工作目录内的原始采集文件和 PLY 归档随工程保留。
 
 1. **本文件是项目级唯一入口**；模块细节写在各模块 README，不要在本文件复制大段实现。
@@ -369,6 +372,8 @@ hm   = sc.height_map_volume(pc.points_world, base, footprint=known_D)
 ---
 
 ## 12. 变更记录
+
+- **冻结泛化图集**：18 件模型预览、108 次空间诊断均从原归档生成。复验命令见模块 10；已核对 126 张 PNG 及离线索引，原冻结算法保持不变。后续仿真按第 11 节执行可视化验收。
 
 - **2026-11-26 独立泛化**：冻结 09 和上游测量源码，模块 10 生成并锁定开发、保留两个清单，固定三种姿态和两种机构模式。逐例结果及失败信息在 `10_generalization/runs/frozen_20261126`。
 

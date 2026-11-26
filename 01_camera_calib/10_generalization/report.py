@@ -13,6 +13,8 @@ from solids import SEEDS
 def report(root):
     check_lock()
     lines=['# 冻结模块 09：独立泛化测试报告','','固定版本 0b82f3b；几何模型为统计分组单位，同件的六次扫描为重复测量。']
+    if (root/'gallery/index.html').is_file():
+        lines.extend(['','[逐模型预览与逐次扫描空间误差图集](gallery/index.html)'])
     for split,title in [('development','开发验证集'),('holdout','最终保留测试集')]:
         folder=root/split
         rows=list(csv.DictReader((folder/'results.csv').open(encoding='utf-8-sig')))
